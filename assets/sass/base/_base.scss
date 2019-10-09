@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond-to("landscape") {
+    font-size: 65%;
+  }
+  @include respond-to("medium") {
+    font-size: 70%;
+  }
+  @include respond-to("large") {
+    font-size: 72.5%;
+  }
+  @include respond-to("desktop") {
+    font-size: 75%;
+  }
+  @include respond-to("ultra") {
+    font-size: 80%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

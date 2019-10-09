@@ -1,0 +1,24 @@
+.under {
+  &__img {
+    width: 25rem;
+    height: 20rem;
+    object-fit: contain;
+    @include midItem;
+  }
+  .main {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+  }
+  .sub {
+      text-align: center;
+      font-size: 1.8rem;
+      color: $grey3;
+  }
+  &__btn {
+    @include midItem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}

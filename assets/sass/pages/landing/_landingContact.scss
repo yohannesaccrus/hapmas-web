@@ -1,0 +1,124 @@
+.landingContact {
+  @include respond-to("medium") {
+    margin-top: -2rem;
+  }
+  @include respond-to("large") {
+    margin-top: -7rem;
+  }
+  @include respond-to("huge") {
+    margin-top: 6rem;
+  }
+  .main {
+    font-size: 2.2rem;
+    font-weight: 500;
+    // color: $grey3;
+    @include respond-to("medium") {
+      font-size: 2.8rem;
+    }
+    @include respond-to("large") {
+      font-size: 3.2rem;
+    }
+    @include respond-to("huge") {
+      font-size: 4rem;
+    }
+    @include respond-to("ultra") {
+      font-size: 3.5rem;
+    }
+  }
+  .sub {
+    font-size: 1.4rem;
+    font-weight: 500;
+    // color: $grey2;
+    margin-top: -0.4rem;
+    @include respond-to("medium") {
+      font-size: 2rem;
+    }
+    @include respond-to("large") {
+      font-size: 2.4rem;
+    }
+    @include respond-to("huge") {
+      font-size: 3.2rem;
+    }
+    @include respond-to("ultra") {
+      font-size: 2.6rem;
+    }
+  }
+  .info {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $grey2;
+    margin: 2.5rem 0;
+    br {
+      display: none;
+    }
+    @include respond-to("medium") {
+      font-size: 1.5rem;
+      br {
+        display: inline;
+      }
+    }
+    @include respond-to("large") {
+      margin: 3rem 0;
+      font-size: 2rem;
+    }
+    @include respond-to("desktop") {
+      font-size: 1.6rem;
+      br {
+        display: none;
+      }
+    }
+    @include respond-to("huge") {
+      font-size: 3.1rem;
+    }
+    @include respond-to("ultra") {
+      font-size: 1.7rem;
+    }
+  }
+  &__form {
+      @include respond-to("landscape") {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+  }
+  &__inputs {
+      flex-basis: 48%;
+      @include respond-to("desktop") {
+          flex-basis: 49%;
+      }
+  }
+  &__input {
+    border: none;
+    background-color: $white2;
+    font-size: 1.5rem;
+    padding: 2rem 1rem 2rem 5%;
+    color: $grey3;
+    @include rounded(10px);
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      background-color: $white2;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__textarea {
+    margin: 1.5rem 0 2rem 0;
+    @include respond-to("landscape") {
+        margin: 0;
+        flex-basis: 48%;
+    }
+    @include respond-to("desktop") {
+        flex-basis: 49%;
+    }
+  }
+  &__btn {
+      font-size: 1.8rem;
+      padding: .8rem 5rem;
+      @include midItem;
+      @include respond-to("landscape") {
+        margin-top: 4rem;
+    }
+  }
+}

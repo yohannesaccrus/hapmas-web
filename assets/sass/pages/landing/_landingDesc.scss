@@ -1,0 +1,222 @@
+.landingDesc {
+  position: relative;
+  z-index: 1;
+  // background-color: red;
+  margin-top: -4rem;
+  @include respond-to("landscape") {
+    margin-top: -7rem;
+  }
+  @include respond-to("large") {
+    margin-top: -12rem;
+  }
+  @include respond-to("desktop") {
+    margin-top: -14rem;
+  }
+  @include respond-to("huge") {
+    margin-top: -16rem;
+  }
+  @include respond-to("ultra") {
+    margin-top: -17rem;
+  }
+  .main {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    // color: $grey3;
+    @include respond-to("medium") {
+      font-size: 2.8rem;
+    }
+    @include respond-to("large") {
+      font-size: 3.2rem;
+    }
+    @include respond-to("huge") {
+      font-size: 4rem;
+    }
+    @include respond-to("ultra") {
+      font-size: 3.5rem;
+    }
+  }
+  &__cont {
+    margin-top: 2rem;
+    @include respond-to("desktop") {
+      margin-top: 4rem;
+    }
+    @include respond-to("ultra") {
+      margin-top: 10rem;
+    }
+  }
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include respond-to("landscape") {
+      align-items: center;
+    }
+    .text {
+      flex-basis: 70%;
+      @include respond-to("landscape") {
+        flex-basis: 50%;
+      }
+      .main {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-bottom: 1rem;
+        // color: $grey3;
+        @include respond-to("large") {
+          font-size: 2.2rem;
+        }
+        @include respond-to("huge") {
+          font-size: 2.5rem;
+        }
+      }
+      .desc {
+        font-size: 1.2rem;
+        text-align: justify;
+        color: $grey2;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        @include respond-to("large") {
+          font-size: 1.4rem;
+        }
+        @include respond-to("huge") {
+          font-size: 1.7rem;
+        }
+      }
+    }
+    .visual {
+      flex-basis: 30%;
+      // background-color: red;
+      position: relative;
+      @include respond-to("landscape") {
+        flex-basis: 50%;
+      }
+      img {
+        width: 25rem;
+        height: 25rem;
+        object-fit: contain;
+        position: absolute;
+        transform: scaleX(-1);
+        left: -0.5rem;
+        @include respond-to("landscape") {
+          position: static;
+          width: 85%;
+          height: 85%;
+          @include midItem;
+        }
+        @include respond-to("medium") {
+          transform: scale(1.1);
+        }
+        @include respond-to("desktop") {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &__cardCont {
+    margin-top: 3rem;
+    @include respond-to("landscape") {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__card {
+    background-color: $white1;
+    padding: 2rem;
+    text-align: center;
+    @include respond-to("desktop") {
+      text-align: left;
+      padding: 3rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+      @include respond-to("landscape") {
+        margin-bottom: 2rem;
+      }
+      @include respond-to("desktop") {
+        margin-bottom: 3rem;
+      }
+    }
+    &--btn {
+      background: none;
+      align-self: center;
+      padding: 0;
+      position: relative;
+      box-shadow: none;
+    }
+    @include shadow($grey3, 0.1);
+    @include rounded(10px);
+    @include respond-to("landscape") {
+      flex-basis: 48%;
+    }
+    @include respond-to("desktop") {
+      flex-basis: 31%;
+    }
+    .icon {
+      height: 6rem;
+      width: 6rem;
+      object-fit: contain;
+    }
+    .main {
+      font-size: 2rem;
+      margin: 2rem 0;
+      @include respond-to("desktop") {
+        text-align: left;
+      }
+      span.blue {
+        color: $blue2;
+      }
+      span.green {
+        color: $green3;
+      }
+    }
+    .desc {
+      text-align: justify;
+      color: $grey3;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    .link {
+      &--blue {
+        color: $blue3;
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+  &__btn {
+    font-size: 1.7rem;
+    width: 80%;
+    padding: 1rem 2rem 1rem 35%;
+    @include shadowBottom($grey4, .4);
+    @include midItem;
+    @include respond-to("landscape") {
+      flex-basis: 30%;
+      align-self: center;
+    }
+    @include respond-to("huge") {
+      padding: 1rem 2rem 1rem 30%;
+    }
+  }
+  &__btnImage {
+    height: 13rem;
+    width: 13rem;
+    object-fit: contain;
+    margin-bottom: -3.8rem;
+    margin-left: -35%;
+    @include respond-to("desktop") {
+      margin-left: 5%;
+    }
+  }
+  &__btnDots {
+    width: 50%;
+    margin-top: .8rem;
+    @include respond-to("desktop") {
+      @include midItem;
+      margin-top: .8rem;
+    }
+  }
+}

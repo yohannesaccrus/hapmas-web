@@ -1,0 +1,16 @@
+@import "./abstracts/abstracts";
+@import "./abstracts/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/customBtn";
+@import "./components/customDropdown";
+@import "./components/customInput";
+
+@import "./layout/footer";
+@import "./layout/layout";
+@import "./layout/navBar";
+@import "./layout/under";
+
+@import "./pages/landing/landing";

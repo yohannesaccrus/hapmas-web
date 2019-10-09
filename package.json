@@ -1,0 +1,25 @@
+{
+  "name": "hapmasNext",
+  "version": "1.0.0",
+  "description": "Hapmas Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Hapmas Team",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "next": "^9.0.7",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-slick": "^0.25.2",
+    "reactstrap": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

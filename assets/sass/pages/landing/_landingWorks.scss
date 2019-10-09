@@ -1,0 +1,70 @@
+.landingWorks {
+  @include respond-to("medium") {
+    margin-top: -4rem;
+  }
+  @include respond-to("large") {
+    margin-top: -10rem;
+  }
+  .main {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    // color: $grey3;
+    @include respond-to("medium") {
+      font-size: 2.8rem;
+    }
+    @include respond-to("large") {
+      font-size: 3.2rem;
+    }
+    @include respond-to("huge") {
+      font-size: 4rem;
+    }
+    @include respond-to("ultra") {
+      font-size: 3.5rem;
+    }
+  }
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+    position: relative;
+    @include respond-to("landscape") {
+      margin-top: 6rem;
+    }
+    &Img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      z-index: 1;
+      @include respond-to("landscape") {
+        transform: scale(1.2);
+        left: -10%;
+      }
+      @include respond-to("huge") {
+        transform: scale(1.5);
+        left: -10%;
+        top: 4rem;
+      }
+     }
+  }
+  &__card {
+    background-color: $green1;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    @include rounded(10px);
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+      @include respond-to("huge") {
+        margin-bottom: 2rem;
+      }
+    }
+    @include respond-to("landscape") {
+      width: 50%;
+      margin-right: 10%;
+    }
+  }
+}

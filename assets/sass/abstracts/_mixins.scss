@@ -1,0 +1,88 @@
+$breakpoints: (
+  "landscape": (
+    min-width: 480px
+  ),
+  "medium": (
+    min-width: 768px
+  ),
+  "large": (
+    min-width: 992px
+  ),
+  "desktop": (
+    min-width: 1200px
+  ),
+  "huge": (
+    min-width: 1920px
+  ),
+  "ultra": (
+    min-width: 2560px
+  )
+);
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin centerVH {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin centerV {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin centerH {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin midItem {
+  display: table;
+  margin: 0 auto;
+}
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin shadow($color, $opacity) {
+  -webkit-box-shadow: 0px 0px 41px -1px rgba($color, $opacity);
+  -moz-box-shadow: 0px 0px 41px -1px rgba($color, $opacity);
+  box-shadow: 0px 0px 41px -1px rgba($color, $opacity);
+}
+@mixin shadowBottom($color, $opacity) {
+  -webkit-box-shadow: 0px 11px 39px -9px rgba($color, $opacity);
+  -moz-box-shadow: 0px 11px 39px -9px rgba($color, $opacity);
+  box-shadow: 0px 11px 39px -9px rgba($color, $opacity);
+}
+@mixin shadowIn($color, $opacity) {
+  -webkit-box-shadow: inset 0px 0px 138px 200px rgba($color, $opacity);
+  -moz-box-shadow: inset 0px 0px 138px 200px rgba($color, $opacity);
+  box-shadow: inset 0px 0px 138px 200px rgba($color, $opacity);
+}
+@mixin bgLinear($direction, $color1, $color2) {
+  background-image: linear-gradient($direction, $color1, $color2);
+}
+@mixin gradientText($color1, $color2) {
+  background: -webkit-linear-gradient($color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

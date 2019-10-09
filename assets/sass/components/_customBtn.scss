@@ -1,0 +1,28 @@
+.newBtn {
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  @include rounded(5px);
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+  &--blue {
+    background-color: $blue3;
+    &:hover {
+      background-color: $blue2 !important;
+    }
+    &:active {
+      background-color: $blue3 !important;
+    }
+  }
+  &--green {
+    background-color: $green1;
+    &:hover {
+      background-color: $green2 !important;
+    }
+    &:active {
+      background-color: $green1 !important;
+    }
+  }
+}
