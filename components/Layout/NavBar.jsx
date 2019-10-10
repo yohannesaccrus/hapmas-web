@@ -30,19 +30,32 @@ class NavBar extends React.Component {
             </Link>
 
             <Link href="/FAQ">
+              <div className="navBar__menu">About Us</div>
+            </Link>
+
+            <Link href="/FAQ">
+              <div className="navBar__menu">Our Team</div>
+            </Link>
+            
+            <Link href="/FAQ">
               <div className="navBar__menu">FAQ</div>
             </Link>
-            <ScrollLink
-              to="landing-contact"
-              spy={true}
-              smooth={true}
-              duration={2000}
-            >
-              <div className="navBar__menu navBar__menu--contact">
-                <i className="fas fa-phone-volume"></i>
-                Contact Us
-              </div>
-            </ScrollLink>
+
+            <Link href="/">
+              <ScrollLink
+                to="landing-contact"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                <a>
+                  <div className="navBar__menu navBar__menu--contact">
+                    <i className="fas fa-phone-volume"></i>
+                    Contact Us
+                  </div>
+                </a>
+              </ScrollLink>
+            </Link>
           </Col>
 
           <Col xs="2" className="navBar__toggler">
@@ -58,7 +71,7 @@ class NavBar extends React.Component {
             <Collapse isOpen={collapse}>
               <div className="navBar__collapse">
                 <Link href="/">
-                  <div className="navBar__link">Beranda</div>
+                  <div className="navBar__link">Home</div>
                 </Link>
 
                 <Link href="/FAQ">

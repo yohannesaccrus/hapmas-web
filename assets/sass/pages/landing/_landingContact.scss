@@ -71,9 +71,6 @@
       }
     }
     @include respond-to("huge") {
-      font-size: 3.1rem;
-    }
-    @include respond-to("ultra") {
       font-size: 1.7rem;
     }
   }
@@ -107,6 +104,9 @@
       @include respond-to("ultra") {
         margin-bottom: 2rem;
     }
+    }
+    @include respond-to("desktop") {
+      padding: 2.3rem 2rem 2.3rem 5%;
     }
   }
   &__textarea {
