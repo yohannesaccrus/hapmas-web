@@ -173,4 +173,33 @@
       top: 7rem;
     }
   }
+  &__btnUp {
+    display: none;
+    @include respond-to("landscape") {
+      display: inline;
+      cursor: pointer;
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      z-index: 200;
+      top: 0%;
+      right: 5%;
+      background-color: $green1;
+      border: none;
+      font-size: 2.5rem;
+      color: $white1;
+      @include rounded(50%);
+      &:hover {
+        background-color: $green3;
+      }
+      &:focus {
+        outline: none;
+      }
+      @include respond-to("desktop") {
+        transform: scale(1.2);
+        right: 15%;
+        top: 40%;
+      }
+    }
+  }
 }

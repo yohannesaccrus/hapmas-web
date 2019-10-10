@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Layout from "../components/Layout/Layout";
 import {
   LandingHero,
@@ -9,14 +10,19 @@ import {
 
 const Index = () => (
   <Layout>
-    <LandingHero />
+    <Element id="landing-hero">
+      <LandingHero />
+    </Element>
     <LandingDiscover />
     <div className="layout__wavepart">
       <img src="/static/index/wave.svg" alt="wave" className="layout__wave1" />
     </div>
     <LandingDesc />
-    <LandingWorks/>
-    <LandingContact/>
+    <LandingWorks />
+    <Element id="landing-contact">
+      <LandingContact />
+    </Element>
+    
   </Layout>
 );
 

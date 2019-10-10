@@ -1,3 +1,4 @@
+import { Link as ScrollLink } from "react-scroll";
 import { Row, Col } from "reactstrap";
 const Footer = () => (
   <div className="footer">
@@ -52,6 +53,11 @@ const Footer = () => (
       alt="illust2"
       className="footer__illust2"
     />
+    <ScrollLink to="landing-hero" spy={true} smooth={true} duration={2000}>
+      <button type="button" className="footer__btnUp">
+        <i className="fas fa-angle-double-up"></i>
+      </button>
+    </ScrollLink>
   </div>
 );
 

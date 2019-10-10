@@ -1,6 +1,6 @@
 .navBar {
   position: sticky;
-  top:0;
+  top: 0;
   background-color: $white1;
   z-index: 100;
   &__mobile {
@@ -27,9 +27,14 @@
   }
   &__img {
     img {
+      cursor: pointer;
       height: 100%;
       width: 12rem;
       object-fit: contain;
+      transition: all .5s ease-out;
+      &:hover {
+        transform: scale(.95);
+      }
       @include respond-to("large") {
         width: 14rem;
       }
@@ -122,6 +127,22 @@
       padding: 0.5rem 1rem;
       @include bgLinear(to right, $green1, $green3);
       @include rounded(5px);
+    }
+    &--contact {
+      background-color: $green1;
+      color: $white1;
+      padding: .8rem 1.5rem;
+      @include rounded(10px);
+      &:hover {
+        @include rounded(20px);
+        padding: .8rem 1.5rem;
+      }
+      i {
+        margin-right: .5rem;
+        transform: rotate(-30deg);
+        transition: all .5s ease;
+        font-size: 1.8rem;
+      }
     }
   }
 }

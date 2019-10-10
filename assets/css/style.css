@@ -219,6 +219,34 @@ p {
     @media (min-width: 2560px) {
       .footer__illust2 {
         top: 7rem; } }
+  .footer__btnUp {
+    display: none; }
+    @media (min-width: 480px) {
+      .footer__btnUp {
+        display: inline;
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        z-index: 200;
+        top: 0%;
+        right: 5%;
+        background-color: #27de8e;
+        border: none;
+        font-size: 2.5rem;
+        color: #ffffff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+        .footer__btnUp:hover {
+          background-color: #2ed573; }
+        .footer__btnUp:focus {
+          outline: none; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
+    .footer__btnUp {
+      transform: scale(1.2);
+      right: 15%;
+      top: 40%; } }
 
 .layout__container {
   overflow: hidden;
@@ -308,9 +336,13 @@ p {
     .navBar {
       padding: 2rem 20%; } }
   .navBar__img img {
+    cursor: pointer;
     height: 100%;
     width: 12rem;
-    object-fit: contain; }
+    object-fit: contain;
+    transition: all .5s ease-out; }
+    .navBar__img img:hover {
+      transform: scale(0.95); }
     @media (min-width: 992px) {
       .navBar__img img {
         width: 14rem; } }
@@ -395,6 +427,23 @@ p {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px; }
+    .navBar__menu--contact {
+      background-color: #27de8e;
+      color: #ffffff;
+      padding: .8rem 1.5rem;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      .navBar__menu--contact:hover {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        padding: .8rem 1.5rem; }
+      .navBar__menu--contact i {
+        margin-right: .5rem;
+        transform: rotate(-30deg);
+        transition: all .5s ease;
+        font-size: 1.8rem; }
 
 .under__img {
   width: 25rem;

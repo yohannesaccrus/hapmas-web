@@ -1,3 +1,4 @@
+import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
 
 const LandingDesc = () => (
@@ -109,12 +110,19 @@ const LandingDesc = () => (
               alt="haha"
               className="landingDesc__btnImage"
             />
-            <CustomButton
-              btnText="Contact Us"
-              btnType="button"
-              btnColor="blue"
-              className="landingDesc__btn"
-            />
+            <ScrollLink
+              to="landing-contact"
+              spy={true}
+              smooth={true}
+              duration={2000}
+            >
+              <CustomButton
+                btnText="Contact Us"
+                btnType="button"
+                btnColor="blue"
+                className="landingDesc__btn"
+              />
+            </ScrollLink>
             <img
               src="/static/index/hero_dots.webp"
               alt="dots"

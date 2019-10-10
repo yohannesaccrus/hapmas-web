@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { Collapse, Row, Col } from "reactstrap";
 
 class NavBar extends React.Component {
@@ -27,9 +28,21 @@ class NavBar extends React.Component {
             <Link href="/">
               <div className="navBar__menu">Home</div>
             </Link>
+
             <Link href="/FAQ">
               <div className="navBar__menu">FAQ</div>
             </Link>
+            <ScrollLink
+              to="landing-contact"
+              spy={true}
+              smooth={true}
+              duration={2000}
+            >
+              <div className="navBar__menu navBar__menu--contact">
+                <i className="fas fa-phone-volume"></i>
+                Contact Us
+              </div>
+            </ScrollLink>
           </Col>
 
           <Col xs="2" className="navBar__toggler">
