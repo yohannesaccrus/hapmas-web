@@ -5,11 +5,16 @@
   @include respond-to("large") {
     margin-top: -10rem;
   }
+  @include respond-to("desktop") {
+    margin-top: -3rem;
+  }
   .main {
     text-align: center;
     font-size: 2.2rem;
     font-weight: 500;
-    // color: $grey3;
+    @include respond-to("landscape") {
+      font-size: 2.5rem;
+    }
     @include respond-to("medium") {
       font-size: 2.8rem;
     }
@@ -20,17 +25,20 @@
       font-size: 4rem;
     }
     @include respond-to("ultra") {
-      font-size: 3.5rem;
+      font-size: 4.2rem;
     }
   }
   &__cont {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 3rem;
+    margin-top: 4rem;
     position: relative;
     @include respond-to("landscape") {
-      margin-top: 6rem;
+      margin-top: 8rem;
+    }
+    @include respond-to("huge") {
+      margin-top: 10rem;
     }
     &Img {
       width: 100%;
@@ -40,31 +48,73 @@
       z-index: 1;
       @include respond-to("landscape") {
         transform: scale(1.2);
-        left: -10%;
       }
       @include respond-to("huge") {
         transform: scale(1.5);
         left: -10%;
         top: 4rem;
       }
-     }
+    }
   }
   &__card {
-    background-color: $green1;
+    background-color: $white1;
     padding: 2rem;
     position: relative;
     z-index: 2;
-    width: 70%;
+    display: flex;
+    align-items: center;
     @include rounded(10px);
+    @include shadow($grey4, 0.08);
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       @include respond-to("huge") {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
     }
     @include respond-to("landscape") {
       width: 50%;
       margin-right: 10%;
+    }
+    @include respond-to("medium") {
+      width: 60%;
+      margin-right: 5%;
+    }
+    @include respond-to("large") {
+      padding: 3rem;
+    }
+    .cardImg {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+      @include respond-to("large") {
+        transform: scale(1.1)
+      }
+    }
+    .text {
+      margin-left: 1.5rem;
+      @include respond-to("large") {
+        margin-left: 2rem;
+      }
+      .title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        @include respond-to("large") {
+          font-size: 1.8rem;
+        }
+        @include respond-to("huge") {
+          font-size: 2.2rem;
+        }
+      }
+      .desc {
+        font-size: 1.2rem;
+        @include respond-to("large") {
+          font-size: 1.5rem;
+        }
+        @include respond-to("huge") {
+          font-size: 1.7rem;
+        }
+      }
     }
   }
 }

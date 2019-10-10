@@ -29,78 +29,97 @@ const LandingDesc = () => (
         </div>
         <div className="landingDesc__cardCont">
           <div className="landingDesc__card">
-            <img src="/static/index/solution_ticket.webp" alt="cardIcon" className="icon"/>
+            <img
+              src="/static/index/solution_ticket.webp"
+              alt="cardIcon"
+              className="icon"
+            />
             <p className="main">
               Open Source <span className="blue">Free</span> Scrapping Data
             </p>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              veniam! Veritatis iusto fugit nostrum sed, facilis perspiciatis
-              cupiditate dolorum unde expedita omnis. Autem, sunt! Cum quam esse
-              vero iure eos?
+              We serve an open-source data that can be used for business
+              development, research, or even education purposes.
             </p>
             <div className="link link--blue">Open Data</div>
           </div>
 
           <div className="landingDesc__card">
-            <img src="/static/index/solution_search.webp" alt="cardIcon" className="icon"/>
+            <img
+              src="/static/index/solution_search.webp"
+              alt="cardIcon"
+              className="icon"
+            />
             <p className="main">
               <span className="green">Premium</span> Web + Socmed Scrapping
             </p>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              veniam! Veritatis iusto fugit nostrum sed, facilis perspiciatis
-              cupiditate dolorum unde expedita omnis. Autem, sunt! Cum quam esse
-              vero iure eos?
+              Tell us what and how many of data you need. We'll gladly surf
+              accross the net to make it ready for you.
             </p>
             <div className="link link--blue">See More</div>
           </div>
 
           <div className="landingDesc__card">
-            <img src="/static/index/solution_crane.webp" alt="cardIcon" className="icon"/>
+            <img
+              src="/static/index/solution_crane.webp"
+              alt="cardIcon"
+              className="icon"
+            />
             <p className="main">Data Gathering</p>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              veniam! Veritatis iusto fugit nostrum sed, facilis perspiciatis
-              cupiditate dolorum unde expedita omnis. Autem, sunt! Cum quam esse
-              vero iure eos?
+              Need direct data gathering throughout the country ? nevermind,
+              We'll gladly handle it. We gather it, analyze it, and deliver it
+              to you.
             </p>
             <div className="link link--blue">See More</div>
           </div>
 
           <div className="landingDesc__card">
-            <img src="/static/index/solution_analytic.webp" alt="cardIcon" className="icon"/>
+            <img
+              src="/static/index/solution_analytic.webp"
+              alt="cardIcon"
+              className="icon"
+            />
             <p className="main">Data Analytic and Optimalization</p>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              veniam! Veritatis iusto fugit nostrum sed, facilis perspiciatis
-              cupiditate dolorum unde expedita omnis. Autem, sunt! Cum quam esse
-              vero iure eos?
+              Get your insight, prediction, and solution for your business
+              development based on your own company data.
             </p>
             <div className="link link--blue">See More</div>
           </div>
 
           <div className="landingDesc__card">
-            <img src="/static/index/solution_marketing.webp" alt="cardIcon" className="icon"/>
+            <img
+              src="/static/index/solution_marketing.webp"
+              alt="cardIcon"
+              className="icon"
+            />
             <p className="main">Marketing Tools</p>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              veniam! Veritatis iusto fugit nostrum sed, facilis perspiciatis
-              cupiditate dolorum unde expedita omnis. Autem, sunt! Cum quam esse
-              vero iure eos?
+              Your marketing campaign and promotion activity will be done more
+              easily with the help from our rangers.
             </p>
             <div className="link link--blue">See More</div>
           </div>
 
           <div className="landingDesc__card landingDesc__card--btn">
-            <img src="/static/index/desc_btn.webp" alt="haha" className="landingDesc__btnImage"/>
+            <img
+              src="/static/index/desc_btn.webp"
+              alt="haha"
+              className="landingDesc__btnImage"
+            />
             <CustomButton
               btnText="Contact Us"
               btnType="button"
               btnColor="blue"
               className="landingDesc__btn"
             />
-            <img src="/static/index/hero_dots.webp" alt="dots" className="landingDesc__btnDots"/>
+            <img
+              src="/static/index/hero_dots.webp"
+              alt="dots"
+              className="landingDesc__btnDots"
+            />
           </div>
         </div>
       </div>

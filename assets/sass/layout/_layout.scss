@@ -16,14 +16,13 @@
     }
     @include respond-to("huge") {
       padding: 12rem 15%;
+      overflow: visible;
     }
     @include respond-to("ultra") {
       padding: 12rem 20%;
-      overflow: visible;
     }
     &--grey {
       @include bgLinear(to bottom, $white2, $white1);
-      // background-color: yellow;
       @include respond-to("landscape") {
         overflow: visible;
       }
@@ -31,10 +30,12 @@
   }
   &__wavepart {
     position: relative;
-    // background-color: blue;
-    margin-top: 4rem;
+    margin-top: 25%;
     @include respond-to("landscape") {
-      margin-top: 6rem;
+      margin-top: 12rem;
+    }
+    @include respond-to("desktop") {
+      margin-top: 15rem;
     }
     @include respond-to("huge") {
       margin-top: 22rem;
@@ -43,14 +44,17 @@
   &__wave1 {
     position: absolute;
     top: -6rem;
+    @include respond-to("bigphone") {
+      top: -8rem;
+    }
     @include respond-to("landscape") {
-      top: -10rem;
+      top: -12rem;
     }
     @include respond-to("large") {
       top: -14rem;
     }
     @include respond-to("desktop") {
-      top: -17rem;
+      top: -18rem;
     }
     @include respond-to("huge") {
       top: -22rem;

@@ -12,10 +12,10 @@ const LandingDiscover = () => (
               <img src="/static/index/discover_ellips1.webp" alt="circle" />
               <p className="title">Data Helps you solve problem</p>
               <p className="desc">
-                Data from business processes helps you pinpoint performance
-                breakdowns so you can better understand each part of the process
-                and know which steps need to be optimized and which are
-                performing well.
+                Analyzed and well-structured Data is a great way to identify
+                what cause problem throughout your business. a step that had
+                been taken based on data is more useful to overcome the problem
+                you have.
               </p>
             </div>
           </div>
@@ -29,11 +29,10 @@ const LandingDiscover = () => (
               <img src="/static/index/discover_ellips2.webp" alt="circle" />
               <p className="title">Data Helps you Improve Process</p>
               <p className="desc">
-                Data helps you understand and improve business processes so you
-                can reduce wasted money and time. Every company feels the effect
-                of waste. It uses up resources that could be better spent on
-                other things, squanders people time, and ultimately impacts your
-                bottom line.
+                With data from your current business process, you can check
+                which part of your business that can be more optimized. So your
+                business will run effectively while also maintain your cost as
+                low as possible.
               </p>
             </div>
           </div>
@@ -45,12 +44,11 @@ const LandingDiscover = () => (
           <div className="landingDiscover__text">
             <div className="main">
               <img src="/static/index/discover_ellips3.webp" alt="circle" />
-              <p className="title">Data Helps you solve problem</p>
+              <p className="title">Data makes you reach more</p>
               <p className="desc">
-                Data from business processes helps you pinpoint performance
-                breakdowns so you can better understand each part of the process
-                and know which steps need to be optimized and which are
-                performing well.
+                Through prediction and insight extracted from data, you can
+                classify and prioritize your business target so it turns your
+                business to income generating machine faster.
               </p>
             </div>
           </div>

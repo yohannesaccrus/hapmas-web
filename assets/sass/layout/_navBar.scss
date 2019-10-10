@@ -36,7 +36,7 @@
       @include respond-to("desktop") {
         width: 10rem;
       }
-      @include respond-to("ultra") {
+      @include respond-to("huge") {
         width: 12rem;
       }
     }

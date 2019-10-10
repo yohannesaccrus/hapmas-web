@@ -11,7 +11,9 @@
   .main {
     font-size: 2.2rem;
     font-weight: 500;
-    // color: $grey3;
+    @include respond-to("landscape") {
+      font-size: 2.5rem;
+    }
     @include respond-to("medium") {
       font-size: 2.8rem;
     }
@@ -22,7 +24,7 @@
       font-size: 4rem;
     }
     @include respond-to("ultra") {
-      font-size: 3.5rem;
+      font-size: 4.2rem;
     }
   }
   .sub {
@@ -40,7 +42,8 @@
       font-size: 3.2rem;
     }
     @include respond-to("ultra") {
-      font-size: 2.6rem;
+      font-size: 3.8rem;
+      margin-top: -1rem;
     }
   }
   .info {
@@ -101,10 +104,14 @@
     }
     &:not(:last-child) {
       margin-bottom: 1.5rem;
+      @include respond-to("ultra") {
+        margin-bottom: 2rem;
+    }
     }
   }
   &__textarea {
     margin: 1.5rem 0 2rem 0;
+    display: flex;
     @include respond-to("landscape") {
         margin: 0;
         flex-basis: 48%;

@@ -1,9 +1,20 @@
 .landingDiscover {
+  @include respond-to("bigphone") {
+    margin-top: 3rem;
+  }
+  @include respond-to("landscape") {
+    margin-top: 0;
+  }
+  @include respond-to("large") {
+    margin-top: 3rem;
+  }
   .head {
     text-align: center;
     font-weight: 500;
     font-size: 2.2rem;
-    // color: $grey3;
+    @include respond-to("landscape") {
+      font-size: 2.5rem;
+    }
     @include respond-to("medium") {
       font-size: 2.8rem;
       margin-top: -3rem;
@@ -21,13 +32,13 @@
     }
     @include respond-to("ultra") {
       margin-top: 0rem;
-      font-size: 3.5rem;
+      font-size: 4.2rem;
     }
   }
   &__cont {
     margin-top: 6rem;
     @include respond-to("medium") {
-      margin-top: 5rem;
+      margin-top: 7rem;
     }
     @include respond-to("ultra") {
       margin-top: 7rem;
@@ -61,7 +72,7 @@
               position: static;
               width: 80%;
               height: 80%;
-              margin-left: 5rem;
+              margin-left: 7rem;
             }
           }
         }
@@ -83,7 +94,6 @@
     }
   }
   &__visual {
-    // background-color: red;
     flex-basis: 40%;
     position: relative;
     @include respond-to("landscape") {
@@ -95,7 +105,7 @@
       object-fit: contain;
       position: absolute;
       top: -12rem;
-      left: -10rem;
+      left: -12rem;
       @media only screen and (min-width: 410px) {
         left: -8rem;
       }
@@ -116,15 +126,16 @@
     }
     .main {
       img {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         object-fit: contain;
         position: absolute;
-        top: -2.8rem;
-        left: 0.5rem;
+        top: -1.8rem;
+        left: 1rem;
         @include respond-to("landscape") {
-          top: -3rem;
-          left: -2rem;
+          transform: scale(1.1);
+          top: -2rem;
+          left: -1.5rem;
         }
         @include respond-to("desktop") {
           top: -2rem;
@@ -142,9 +153,8 @@
       .title {
         font-size: 1.5rem;
         font-weight: 500;
-        // color: $grey3;
         position: relative;
-        line-height: 3rem;
+        line-height: 2.2rem;
         @include respond-to("landscape") {
           font-size: 1.8rem;
         }

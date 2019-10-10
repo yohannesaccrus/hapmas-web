@@ -237,11 +237,11 @@ p {
       padding: 10rem 15%; } }
   @media (min-width: 1920px) {
     .layout__container {
-      padding: 12rem 15%; } }
+      padding: 12rem 15%;
+      overflow: visible; } }
   @media (min-width: 2560px) {
     .layout__container {
-      padding: 12rem 20%;
-      overflow: visible; } }
+      padding: 12rem 20%; } }
   .layout__container--grey {
     background-image: linear-gradient(to bottom, #f1f2f6, #ffffff); }
     @media (min-width: 480px) {
@@ -250,10 +250,13 @@ p {
 
 .layout__wavepart {
   position: relative;
-  margin-top: 4rem; }
+  margin-top: 25%; }
   @media (min-width: 480px) {
     .layout__wavepart {
-      margin-top: 6rem; } }
+      margin-top: 12rem; } }
+  @media (min-width: 1200px) {
+    .layout__wavepart {
+      margin-top: 15rem; } }
   @media (min-width: 1920px) {
     .layout__wavepart {
       margin-top: 22rem; } }
@@ -261,15 +264,18 @@ p {
 .layout__wave1 {
   position: absolute;
   top: -6rem; }
+  @media (min-width: 410px) {
+    .layout__wave1 {
+      top: -8rem; } }
   @media (min-width: 480px) {
     .layout__wave1 {
-      top: -10rem; } }
+      top: -12rem; } }
   @media (min-width: 992px) {
     .layout__wave1 {
       top: -14rem; } }
   @media (min-width: 1200px) {
     .layout__wave1 {
-      top: -17rem; } }
+      top: -18rem; } }
   @media (min-width: 1920px) {
     .layout__wave1 {
       top: -22rem; } }
@@ -311,7 +317,7 @@ p {
     @media (min-width: 1200px) {
       .navBar__img img {
         width: 10rem; } }
-    @media (min-width: 2560px) {
+    @media (min-width: 1920px) {
       .navBar__img img {
         width: 12rem; } }
   .navBar__toggler {
@@ -445,7 +451,7 @@ p {
       @media (min-width: 1920px) {
         .landingHero__text .main {
           font-size: 5rem;
-          line-height: 5.5rem; } }
+          line-height: 6.3rem; } }
     .landingHero__text .sub {
       font-size: 1.3rem;
       margin-top: 1rem;
@@ -539,48 +545,64 @@ p {
         margin-top: 6rem; } }
     @media (min-width: 2560px) {
       .landingHero__btn {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 1rem 6rem;
         margin-top: 6rem; } }
   .landingHero__dots {
     position: absolute;
     width: 55%;
-    left: 12%;
+    left: 15%;
     bottom: -1.1rem;
     z-index: 1; }
-    @media only screen and (min-width: 410px) {
+    @media (min-width: 410px) {
       .landingHero__dots {
-        left: 6%; } }
+        left: 4%; } }
     @media (min-width: 480px) {
       .landingHero__dots {
         width: 30%;
         bottom: -1.2rem; } }
     @media (min-width: 768px) {
       .landingHero__dots {
-        left: 8%; } }
+        left: 6%; } }
     @media (min-width: 992px) {
       .landingHero__dots {
-        left: 6%;
+        left: 4%;
         bottom: -1.4rem; } }
     @media (min-width: 1200px) {
       .landingHero__dots {
-        left: 2.5%;
+        width: 25%;
+        left: 4%;
         bottom: -1.7rem; } }
     @media (min-width: 1920px) {
       .landingHero__dots {
-        left: 4%;
+        left: 2.8%;
         width: 23%;
-        bottom: -1.8rem; } }
+        bottom: -2.2rem; } }
     @media (min-width: 2560px) {
       .landingHero__dots {
-        left: 3.5%;
-        width: 17%;
-        bottom: -1.5rem; } }
+        left: 5%;
+        width: 20%;
+        bottom: -2.2rem; } }
+
+@media (min-width: 410px) {
+  .landingDiscover {
+    margin-top: 3rem; } }
+
+@media (min-width: 480px) {
+  .landingDiscover {
+    margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .landingDiscover {
+    margin-top: 3rem; } }
 
 .landingDiscover .head {
   text-align: center;
   font-weight: 500;
   font-size: 2.2rem; }
+  @media (min-width: 480px) {
+    .landingDiscover .head {
+      font-size: 2.5rem; } }
   @media (min-width: 768px) {
     .landingDiscover .head {
       font-size: 2.8rem;
@@ -599,13 +621,13 @@ p {
   @media (min-width: 2560px) {
     .landingDiscover .head {
       margin-top: 0rem;
-      font-size: 3.5rem; } }
+      font-size: 4.2rem; } }
 
 .landingDiscover__cont {
   margin-top: 6rem; }
   @media (min-width: 768px) {
     .landingDiscover__cont {
-      margin-top: 5rem; } }
+      margin-top: 7rem; } }
   @media (min-width: 2560px) {
     .landingDiscover__cont {
       margin-top: 7rem; } }
@@ -636,7 +658,7 @@ p {
           position: static;
           width: 80%;
           height: 80%;
-          margin-left: 5rem; } }
+          margin-left: 7rem; } }
   .landingDiscover__card:nth-child(even) .landingDiscover__text {
     padding-left: 0; }
     .landingDiscover__card:nth-child(even) .landingDiscover__text .main img {
@@ -660,7 +682,7 @@ p {
     object-fit: contain;
     position: absolute;
     top: -12rem;
-    left: -10rem; }
+    left: -12rem; }
     @media only screen and (min-width: 410px) {
       .landingDiscover__visual img {
         left: -8rem; } }
@@ -679,16 +701,17 @@ p {
       flex-basis: 50%;
       padding-left: 0; } }
   .landingDiscover__text .main img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     object-fit: contain;
     position: absolute;
-    top: -2.8rem;
-    left: 0.5rem; }
+    top: -1.8rem;
+    left: 1rem; }
     @media (min-width: 480px) {
       .landingDiscover__text .main img {
-        top: -3rem;
-        left: -2rem; } }
+        transform: scale(1.1);
+        top: -2rem;
+        left: -1.5rem; } }
     @media (min-width: 1200px) {
       .landingDiscover__text .main img {
         top: -2rem; } }
@@ -705,7 +728,7 @@ p {
     font-size: 1.5rem;
     font-weight: 500;
     position: relative;
-    line-height: 3rem; }
+    line-height: 2.2rem; }
     @media (min-width: 480px) {
       .landingDiscover__text .main .title {
         font-size: 1.8rem; } }
@@ -771,6 +794,9 @@ p {
     text-align: center;
     font-size: 2.2rem;
     font-weight: 500; }
+    @media (min-width: 480px) {
+      .landingDesc .main {
+        font-size: 2.5rem; } }
     @media (min-width: 768px) {
       .landingDesc .main {
         font-size: 2.8rem; } }
@@ -782,7 +808,7 @@ p {
         font-size: 4rem; } }
     @media (min-width: 2560px) {
       .landingDesc .main {
-        font-size: 3.5rem; } }
+        font-size: 4.2rem; } }
   .landingDesc__cont {
     margin-top: 2rem; }
     @media (min-width: 1200px) {
@@ -790,7 +816,7 @@ p {
         margin-top: 4rem; } }
     @media (min-width: 2560px) {
       .landingDesc__cont {
-        margin-top: 10rem; } }
+        margin-top: 7rem; } }
   .landingDesc__head {
     display: flex;
     flex-wrap: wrap;
@@ -799,7 +825,10 @@ p {
       .landingDesc__head {
         align-items: center; } }
     .landingDesc__head .text {
-      flex-basis: 70%; }
+      flex-basis: 100%; }
+      @media (min-width: 410px) {
+        .landingDesc__head .text {
+          flex-basis: 70%; } }
       @media (min-width: 480px) {
         .landingDesc__head .text {
           flex-basis: 50%; } }
@@ -826,8 +855,12 @@ p {
           .landingDesc__head .text .desc {
             font-size: 1.7rem; } }
     .landingDesc__head .visual {
-      flex-basis: 30%;
-      position: relative; }
+      display: none; }
+      @media (min-width: 410px) {
+        .landingDesc__head .visual {
+          display: inline;
+          flex-basis: 30%;
+          position: relative; } }
       @media (min-width: 480px) {
         .landingDesc__head .visual {
           flex-basis: 50%; } }
@@ -837,6 +870,7 @@ p {
         object-fit: contain;
         position: absolute;
         transform: scaleX(-1);
+        top: 3rem;
         left: -0.5rem; }
         @media (min-width: 480px) {
           .landingDesc__head .visual img {
@@ -958,10 +992,17 @@ p {
   .landingWorks {
     margin-top: -10rem; } }
 
+@media (min-width: 1200px) {
+  .landingWorks {
+    margin-top: -3rem; } }
+
 .landingWorks .main {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 500; }
+  @media (min-width: 480px) {
+    .landingWorks .main {
+      font-size: 2.5rem; } }
   @media (min-width: 768px) {
     .landingWorks .main {
       font-size: 2.8rem; } }
@@ -973,17 +1014,20 @@ p {
       font-size: 4rem; } }
   @media (min-width: 2560px) {
     .landingWorks .main {
-      font-size: 3.5rem; } }
+      font-size: 4.2rem; } }
 
 .landingWorks__cont {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 3rem;
+  margin-top: 4rem;
   position: relative; }
   @media (min-width: 480px) {
     .landingWorks__cont {
-      margin-top: 6rem; } }
+      margin-top: 8rem; } }
+  @media (min-width: 1920px) {
+    .landingWorks__cont {
+      margin-top: 10rem; } }
   .landingWorks__contImg {
     width: 100%;
     height: 100%;
@@ -992,8 +1036,7 @@ p {
     z-index: 1; }
     @media (min-width: 480px) {
       .landingWorks__contImg {
-        transform: scale(1.2);
-        left: -10%; } }
+        transform: scale(1.2); } }
     @media (min-width: 1920px) {
       .landingWorks__contImg {
         transform: scale(1.5);
@@ -1001,23 +1044,64 @@ p {
         top: 4rem; } }
 
 .landingWorks__card {
-  background-color: #27de8e;
+  background-color: #ffffff;
   padding: 2rem;
   position: relative;
   z-index: 2;
-  width: 70%;
+  display: flex;
+  align-items: center;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 41px -1px rgba(47, 53, 66, 0.08);
+  -moz-box-shadow: 0px 0px 41px -1px rgba(47, 53, 66, 0.08);
+  box-shadow: 0px 0px 41px -1px rgba(47, 53, 66, 0.08); }
   .landingWorks__card:not(:last-child) {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     @media (min-width: 1920px) {
       .landingWorks__card:not(:last-child) {
-        margin-bottom: 2rem; } }
+        margin-bottom: 3rem; } }
   @media (min-width: 480px) {
     .landingWorks__card {
       width: 50%;
       margin-right: 10%; } }
+  @media (min-width: 768px) {
+    .landingWorks__card {
+      width: 60%;
+      margin-right: 5%; } }
+  @media (min-width: 992px) {
+    .landingWorks__card {
+      padding: 3rem; } }
+  .landingWorks__card .cardImg {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain; }
+    @media (min-width: 992px) {
+      .landingWorks__card .cardImg {
+        transform: scale(1.1); } }
+  .landingWorks__card .text {
+    margin-left: 1.5rem; }
+    @media (min-width: 992px) {
+      .landingWorks__card .text {
+        margin-left: 2rem; } }
+    .landingWorks__card .text .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem; }
+      @media (min-width: 992px) {
+        .landingWorks__card .text .title {
+          font-size: 1.8rem; } }
+      @media (min-width: 1920px) {
+        .landingWorks__card .text .title {
+          font-size: 2.2rem; } }
+    .landingWorks__card .text .desc {
+      font-size: 1.2rem; }
+      @media (min-width: 992px) {
+        .landingWorks__card .text .desc {
+          font-size: 1.5rem; } }
+      @media (min-width: 1920px) {
+        .landingWorks__card .text .desc {
+          font-size: 1.7rem; } }
 
 @media (min-width: 768px) {
   .landingContact {
@@ -1034,6 +1118,9 @@ p {
 .landingContact .main {
   font-size: 2.2rem;
   font-weight: 500; }
+  @media (min-width: 480px) {
+    .landingContact .main {
+      font-size: 2.5rem; } }
   @media (min-width: 768px) {
     .landingContact .main {
       font-size: 2.8rem; } }
@@ -1045,7 +1132,7 @@ p {
       font-size: 4rem; } }
   @media (min-width: 2560px) {
     .landingContact .main {
-      font-size: 3.5rem; } }
+      font-size: 4.2rem; } }
 
 .landingContact .sub {
   font-size: 1.4rem;
@@ -1062,7 +1149,8 @@ p {
       font-size: 3.2rem; } }
   @media (min-width: 2560px) {
     .landingContact .sub {
-      font-size: 2.6rem; } }
+      font-size: 3.8rem;
+      margin-top: -1rem; } }
 
 .landingContact .info {
   font-size: 1.3rem;
@@ -1119,9 +1207,13 @@ p {
     background-color: #f1f2f6; }
   .landingContact__input:not(:last-child) {
     margin-bottom: 1.5rem; }
+    @media (min-width: 2560px) {
+      .landingContact__input:not(:last-child) {
+        margin-bottom: 2rem; } }
 
 .landingContact__textarea {
-  margin: 1.5rem 0 2rem 0; }
+  margin: 1.5rem 0 2rem 0;
+  display: flex; }
   @media (min-width: 480px) {
     .landingContact__textarea {
       margin: 0;
