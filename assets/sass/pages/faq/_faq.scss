@@ -1,0 +1,60 @@
+.FAQ {
+    .main {
+        position: relative;
+        p {
+          font-size: 2rem;
+          font-weight: 500;
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+        img {
+          width: 5rem;
+          height: 5rem;
+          object-fit: contain;
+          position: absolute;
+          left: 3%;
+          top: -2rem;
+          z-index: 1;
+        }
+        &--second {
+          margin-top: 25%;
+        }
+      }
+      &__cont {
+          margin-top: 10%;
+      }
+      &__label {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 2rem;
+          @include shadow($white4, .6);
+          @include rounded(10px);
+          &:not(:last-child) {
+              margin-bottom: 2rem;
+          }
+          i {
+              font-size: 1.5rem;
+              color: $green1;
+          }
+          .question {
+              font-size: 1.5rem;
+              margin-left: 1rem;
+                font-weight: 500;
+                color: $grey3;
+          }
+      }
+      &__collapse {
+          flex-basis: 100%;
+      }
+      &__card {
+          margin-top: 1rem;
+          border: 1px solid $green1;
+          padding: 1.5rem 2rem;
+          font-size: 1.3rem;
+          text-align: justify;
+          text-indent: 2rem;
+          @include rounded(10px);
+      }
+}

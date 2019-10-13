@@ -1,0 +1,90 @@
+.team {
+  .main {
+    position: relative;
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+      position: absolute;
+      left: 16%;
+      top: -2rem;
+      z-index: 1;
+    }
+    &--second {
+      margin-top: 25%;
+    }
+  }
+  &__cardCont {
+    margin-top: 10%;
+  }
+  &__card {
+    display: flex;
+    overflow: hidden;
+    @include shadow($white4, 0.4);
+    @include rounded(10px);
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    .text {
+      padding: 2rem;
+      flex-basis: 60%;
+      .name {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      .role {
+        font-size: 1.5rem;
+        color: $grey3;
+      }
+      .socialCont {
+        margin-top: 1.5rem;
+        .social {
+          display: flex;
+          align-items: center;
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+          p {
+            font-size: 1.3rem;
+            margin-left: 0.8rem;
+          }
+          i {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    .visual {
+      flex-basis: 40%;
+      &--wingo {
+        background: url("http://bit.ly/31igSpy");
+        background-size: cover;
+        background-position: center center;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background: url("http://bit.ly/2VDoD89");
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+      &--hadi {
+        background: url("http://bit.ly/2m5Rjch");
+        background-size: cover;
+        background-position: center center;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background: url("http://bit.ly/2M9OXng");
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+    }
+  }
+}
