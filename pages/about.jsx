@@ -41,7 +41,7 @@ const AboutUs = () => (
             <div className="about__card">
               <img src="http://bit.ly/2pjBuQE" alt="cardImg" />
               <div className="text">
-                <p className="main">Lorem Ipsum</p>
+                <p className="title">Lorem Ipsum</p>
                 <p className="desc">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
                   nisi inventore ad iure odio harum expedita dolore tempore
@@ -58,7 +58,7 @@ const AboutUs = () => (
             <div className="about__card">
               <img src="http://bit.ly/2MG6EKf" alt="cardImg" />
               <div className="text">
-                <p className="main">Lorem Ipsum</p>
+                <p className="title">Lorem Ipsum</p>
                 <p className="desc">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
                   nisi inventore ad iure odio harum expedita dolore tempore
@@ -75,7 +75,7 @@ const AboutUs = () => (
             <div className="about__card">
               <img src="http://bit.ly/2ph4lFv" alt="cardImg" />
               <div className="text">
-                <p className="main">Lorem Ipsum</p>
+                <p className="title">Lorem Ipsum</p>
                 <p className="desc">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
                   nisi inventore ad iure odio harum expedita dolore tempore

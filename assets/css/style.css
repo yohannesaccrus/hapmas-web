@@ -1291,12 +1291,25 @@ p {
 
 .about .main {
   position: relative; }
+  @media (min-width: 992px) {
+    .about .main {
+      margin-top: -4rem; } }
   .about .main p {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     position: relative;
     z-index: 2; }
+    @media (min-width: 480px) {
+      .about .main p {
+        text-align: left;
+        font-size: 2.2rem; } }
+    @media (min-width: 768px) {
+      .about .main p {
+        font-size: 2.4rem; } }
+    @media (min-width: 1200px) {
+      .about .main p {
+        font-size: 2.5rem; } }
   .about .main img {
     width: 5rem;
     height: 5rem;
@@ -1305,11 +1318,33 @@ p {
     left: 2%;
     top: -2rem;
     z-index: 1; }
+    @media (min-width: 480px) {
+      .about .main img {
+        left: -2%;
+        top: -1.7rem; } }
   .about .main--second {
     margin-top: 25%; }
+    @media (min-width: 480px) {
+      .about .main--second {
+        margin-top: 8%; } }
+    @media (min-width: 1920px) {
+      .about .main--second {
+        margin-top: 6%; } }
+    @media (min-width: 2560px) {
+      .about .main--second {
+        margin-top: 8%; } }
 
 .about__first {
   margin: 3rem 0; }
+  @media (min-width: 480px) {
+    .about__first {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem 0; } }
+  @media (min-width: 480px) {
+    .about__first .text {
+      flex-basis: 48%; } }
   .about__first .text p {
     font-size: 1.2rem;
     text-align: justify;
@@ -1317,14 +1352,30 @@ p {
     line-height: 2rem; }
     .about__first .text p:not(:last-child) {
       margin-bottom: 1rem; }
+    @media (min-width: 480px) {
+      .about__first .text p {
+        font-size: 1.3rem;
+        line-height: 2.2rem; } }
+    @media (min-width: 1200px) {
+      .about__first .text p {
+        font-size: 1.5rem;
+        line-height: 2.6rem; } }
   .about__first .visual {
     margin-top: 2rem;
     position: relative; }
+    @media (min-width: 480px) {
+      .about__first .visual {
+        margin-top: 0;
+        flex-basis: 48%; } }
     .about__first .visual .pict1 {
       width: 100%;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px; }
+      @media (min-width: 1920px) {
+        .about__first .visual .pict1 {
+          height: 20rem;
+          object-fit: cover; } }
     .about__first .visual .pict2 {
       width: 16rem;
       height: 16rem;
@@ -1332,9 +1383,22 @@ p {
       position: absolute;
       right: 1rem;
       bottom: -5rem; }
+      @media (min-width: 480px) {
+        .about__first .visual .pict2 {
+          transform: scale(0.8);
+          right: -1rem; } }
 
 .about__cardCont {
   margin-top: 10%; }
+  @media (min-width: 480px) {
+    .about__cardCont {
+      margin-top: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 1920px) {
+    .about__cardCont {
+      margin-top: 3rem; } }
 
 .about__card {
   position: relative;
@@ -1347,19 +1411,35 @@ p {
   box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.5); }
   .about__card:not(:last-child) {
     margin-bottom: 3rem; }
+    @media (min-width: 480px) {
+      .about__card:not(:last-child) {
+        margin-bottom: 2rem; } }
+    @media (min-width: 1200px) {
+      .about__card:not(:last-child) {
+        margin-bottom: 3rem; } }
+  @media (min-width: 480px) {
+    .about__card {
+      flex-basis: 48.5%; } }
+  @media (min-width: 1200px) {
+    .about__card {
+      margin-bottom: 2rem;
+      flex-basis: 31%; } }
   .about__card img {
     width: 100%;
     height: 20rem;
     object-fit: cover; }
   .about__card .text {
     padding: 2rem; }
-    .about__card .text .main {
+    .about__card .text .title {
       font-size: 2rem;
       font-weight: 500;
       margin-bottom: 1rem; }
     .about__card .text .desc {
       text-align: justify;
       font-size: 1.2rem; }
+      @media (min-width: 768px) {
+        .about__card .text .desc {
+          line-height: 2rem; } }
   .about__card .illust {
     width: 12rem;
     height: 12rem;
@@ -1367,15 +1447,36 @@ p {
     position: absolute;
     top: 35%;
     right: -2rem; }
+    @media (min-width: 768px) {
+      .about__card .illust {
+        transform: scale(0.9);
+        right: -3rem; } }
+    @media (min-width: 1200px) {
+      .about__card .illust {
+        transform: scale(0.7);
+        top: 32%; } }
 
 .team .main {
   position: relative; }
+  @media (min-width: 992px) {
+    .team .main {
+      margin-top: -4rem; } }
   .team .main p {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     position: relative;
     z-index: 2; }
+    @media (min-width: 480px) {
+      .team .main p {
+        text-align: left;
+        font-size: 2.2rem; } }
+    @media (min-width: 768px) {
+      .team .main p {
+        font-size: 2.4rem; } }
+    @media (min-width: 1200px) {
+      .team .main p {
+        font-size: 2.5rem; } }
   .team .main img {
     width: 5rem;
     height: 5rem;
@@ -1384,26 +1485,48 @@ p {
     left: 16%;
     top: -2rem;
     z-index: 1; }
-  .team .main--second {
-    margin-top: 25%; }
+    @media (min-width: 480px) {
+      .team .main img {
+        left: -2%;
+        top: -1.7rem; } }
 
 .team__cardCont {
   margin-top: 10%; }
+  @media (min-width: 480px) {
+    .team__cardCont {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
 
 .team__card {
   display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
   -moz-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
   box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 10px; }
-  .team__card:not(:last-child) {
-    margin-bottom: 2rem; }
+  border-radius: 10px;
+  margin-bottom: 2rem; }
+  @media (min-width: 480px) {
+    .team__card {
+      flex-basis: 48.5%; } }
+  @media (min-width: 992px) {
+    .team__card {
+      flex-basis: 31%; } }
+  @media (min-width: 1920px) {
+    .team__card {
+      flex-basis: 23%; } }
   .team__card .text {
     padding: 2rem;
     flex-basis: 60%; }
+    @media (min-width: 768px) {
+      .team__card .text {
+        flex-basis: 100%;
+        order: 2; } }
     .team__card .text .name {
       font-size: 2rem;
       font-weight: 500; }
@@ -1414,65 +1537,98 @@ p {
       margin-top: 1.5rem; }
       .team__card .text .socialCont .social {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        transition: all .3s ease-out; }
         .team__card .text .socialCont .social:not(:last-child) {
           margin-bottom: 1rem; }
+          @media (min-width: 1200px) {
+            .team__card .text .socialCont .social:not(:last-child) {
+              margin-bottom: 1.2rem; } }
+        @media (min-width: 1200px) {
+          .team__card .text .socialCont .social {
+            cursor: pointer; }
+            .team__card .text .socialCont .social:hover {
+              transform: translateX(0.3rem);
+              color: #2a65d9; } }
         .team__card .text .socialCont .social p {
           font-size: 1.3rem;
           margin-left: 0.8rem; }
         .team__card .text .socialCont .social i {
           font-size: 1.8rem; }
   .team__card .visual {
-    flex-basis: 40%; }
-    .team__card .visual--wingo {
-      background: url("http://bit.ly/31igSpy");
+    flex-basis: 40%;
+    background: url("http://bit.ly/31igSpy");
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    @media (min-width: 768px) {
+      .team__card .visual {
+        flex-basis: 100%;
+        height: 15rem; } }
+    .team__card .visual__overlay {
+      display: none;
       background-size: cover;
-      background-position: center center;
-      transition: all 0.5s ease-out; }
-      .team__card .visual--wingo:hover {
-        background: url("http://bit.ly/2VDoD89");
-        background-size: cover;
-        background-position: center center; }
-    .team__card .visual--hadi {
-      background: url("http://bit.ly/2m5Rjch");
-      background-size: cover;
-      background-position: center center;
-      transition: all 0.5s ease-out; }
-      .team__card .visual--hadi:hover {
-        background: url("http://bit.ly/2M9OXng");
-        background-size: cover;
-        background-position: center center; }
+      background-position: center center; }
+      @media (min-width: 1200px) {
+        .team__card .visual__overlay {
+          display: inline;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: all 0.5s ease-out; }
+          .team__card .visual__overlay:hover {
+            opacity: 1; } }
 
 .FAQ .main {
   position: relative; }
+  @media (min-width: 992px) {
+    .FAQ .main {
+      margin-top: -4rem; } }
   .FAQ .main p {
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     position: relative;
     z-index: 2; }
+    @media (min-width: 480px) {
+      .FAQ .main p {
+        text-align: left;
+        font-size: 2.2rem; } }
+    @media (min-width: 768px) {
+      .FAQ .main p {
+        font-size: 2.4rem; } }
+    @media (min-width: 1200px) {
+      .FAQ .main p {
+        font-size: 2.5rem; } }
   .FAQ .main img {
     width: 5rem;
     height: 5rem;
     object-fit: contain;
     position: absolute;
-    left: 3%;
+    left: 16%;
     top: -2rem;
     z-index: 1; }
-  .FAQ .main--second {
-    margin-top: 25%; }
+    @media (min-width: 480px) {
+      .FAQ .main img {
+        left: -2%;
+        top: -1.7rem; } }
 
 .FAQ__cont {
   margin-top: 10%; }
+  @media (min-width: 480px) {
+    .FAQ__cont {
+      margin-top: 3rem; } }
 
 .FAQ__label {
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 2rem;
-  -webkit-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.6);
-  -moz-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.6);
-  box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.6);
+  -webkit-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
+  -moz-box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
+  box-shadow: 0px 0px 41px -1px rgba(206, 214, 224, 0.4);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
@@ -1481,11 +1637,17 @@ p {
   .FAQ__label i {
     font-size: 1.5rem;
     color: #27de8e; }
+    @media (min-width: 992px) {
+      .FAQ__label i {
+        font-size: 1.8rem; } }
   .FAQ__label .question {
     font-size: 1.5rem;
     margin-left: 1rem;
     font-weight: 500;
     color: #57606f; }
+    @media (min-width: 992px) {
+      .FAQ__label .question {
+        font-size: 1.8rem; } }
 
 .FAQ__collapse {
   flex-basis: 100%; }
@@ -1500,3 +1662,6 @@ p {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
+  @media (min-width: 992px) {
+    .FAQ__card {
+      font-size: 1.5rem; } }

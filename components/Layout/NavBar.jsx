@@ -29,15 +29,15 @@ class NavBar extends React.Component {
               <div className="navBar__menu">Home</div>
             </Link>
 
-            <Link href="#">
+            <Link href="/about">
               <div className="navBar__menu">About Us</div>
             </Link>
 
-            <Link href="#">
+            <Link href="/team">
               <div className="navBar__menu">Our Team</div>
             </Link>
 
-            <Link href="#">
+            <Link href="/FAQ">
               <div className="navBar__menu">FAQ</div>
             </Link>
 

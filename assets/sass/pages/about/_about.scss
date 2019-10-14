@@ -1,12 +1,25 @@
 .about {
   .main {
     position: relative;
+    @include respond-to("large") {
+      margin-top: -4rem;
+    }
     p {
       font-size: 2rem;
       font-weight: 500;
       text-align: center;
       position: relative;
       z-index: 2;
+      @include respond-to("landscape") {
+        text-align: left;
+        font-size: 2.2rem;
+      }
+      @include respond-to("medium") {
+        font-size: 2.4rem;
+      }
+      @include respond-to("desktop") {
+        font-size: 2.5rem;
+      }
     }
     img {
       width: 5rem;
@@ -16,14 +29,36 @@
       left: 2%;
       top: -2rem;
       z-index: 1;
+      @include respond-to("landscape") {
+        left: -2%;
+        top: -1.7rem;
+      }
     }
     &--second {
       margin-top: 25%;
+      @include respond-to("landscape") {
+        margin-top: 8%;
+       }
+       @include respond-to("huge") {
+        margin-top: 6%;
+      }
+      @include respond-to("ultra") {
+        margin-top: 8%;
+      }
     }
   }
   &__first {
     margin: 3rem 0;
+    @include respond-to("landscape") {
+      display: flex;
+      align-items: center;  
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
     .text {
+      @include respond-to("landscape") {
+       flex-basis: 48%; 
+      }
       p {
         font-size: 1.2rem;
         text-align: justify;
@@ -32,14 +67,30 @@
         &:not(:last-child) {
           margin-bottom: 1rem;
         }
+        @include respond-to("landscape") {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+         }
+         @include respond-to("desktop") {
+          font-size: 1.5rem;
+          line-height: 2.6rem;
+        }
       }
     }
     .visual {
       margin-top: 2rem;
       position: relative;
+      @include respond-to("landscape") {
+        margin-top: 0;
+        flex-basis: 48%;
+       }
       .pict1 {
         width: 100%;
         @include rounded(10px);
+        @include respond-to("huge") {
+          height: 20rem;
+          object-fit: cover;
+        }
       }
       .pict2 {
         width: 16rem;
@@ -48,11 +99,24 @@
         position: absolute;
         right: 1rem;
         bottom: -5rem;
+        @include respond-to("landscape") {
+          transform: scale(.8);
+          right: -1rem;
+         }
       }
     }
   }
   &__cardCont {
     margin-top: 10%;
+    @include respond-to("landscape") {
+      margin-top: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     }
+     @include respond-to("huge") {
+      margin-top: 3rem;
+    }
   }
   &__card {
     position: relative;
@@ -61,7 +125,20 @@
     @include shadow($white4, 0.5);
     &:not(:last-child) {
       margin-bottom: 3rem;
+      @include respond-to("landscape") {
+        margin-bottom: 2rem;
+       }
+       @include respond-to("desktop") {
+        margin-bottom: 3rem;
+       }
     }
+    @include respond-to("landscape") {
+      flex-basis: 48.5%;
+     }
+     @include respond-to("desktop") {
+      margin-bottom: 2rem;
+      flex-basis: 31%;
+     }
     img {
       width: 100%;
       height: 20rem;
@@ -69,7 +146,7 @@
     }
     .text {
       padding: 2rem;
-      .main {
+      .title {
         font-size: 2rem;
         font-weight: 500;
         margin-bottom: 1rem;
@@ -77,6 +154,9 @@
       .desc {
         text-align: justify;
         font-size: 1.2rem;
+        @include respond-to("medium") {
+          line-height: 2rem;
+        }
       }
     }
     .illust {
@@ -86,6 +166,14 @@
       position: absolute;
       top: 35%;
       right: -2rem;
+      @include respond-to("medium") {
+        transform: scale(.9);
+        right: -3rem;
+      }
+      @include respond-to("desktop") {
+        transform: scale(.7);
+        top: 32%;
+      }
     }
   }
 }

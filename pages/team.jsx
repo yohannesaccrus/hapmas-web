@@ -19,63 +19,17 @@ const Team = () => (
                   <p>@wings.hercahyo</p>
                 </div>
                 <div className="social">
-                  <i className="fab fa-facebook-square"></i>
+                  <i className="fab fa-linkedin"></i>
                   <p>wingohercahyo</p>
                 </div>
               </div>
             </div>
-            <div className="visual visual--wingo"></div>
-          </div>
-          <div className="team__card">
-            <div className="text">
-              <div className="name">Hadi Nur Wahid</div>
-              <div className="role">Fullstack Developer</div>
-              <div className="socialCont">
-                <div className="social">
-                  <i className="fab fa-instagram"></i>
-                  <p>@hadinw</p>
-                </div>
-                <div className="social">
-                  <i className="fab fa-facebook-square"></i>
-                  <p>hadinurwahid</p>
-                </div>
-              </div>
+            <div className="visual">
+              <div
+                className="visual__overlay"
+                style={{ backgroundImage: "url(http://bit.ly/2OJV9UH)" }}
+              ></div>
             </div>
-            <div className="visual visual--hadi"></div>
-          </div>
-          <div className="team__card">
-            <div className="text">
-              <div className="name">Icha M. Febriyana</div>
-              <div className="role">Product Development</div>
-              <div className="socialCont">
-                <div className="social">
-                  <i className="fab fa-instagram"></i>
-                  <p>@ichamw</p>
-                </div>
-                <div className="social">
-                  <i className="fab fa-facebook-square"></i>
-                  <p>ichamf</p>
-                </div>
-              </div>
-            </div>
-            <div className="visual visual--hadi"></div>
-          </div>
-          <div className="team__card">
-            <div className="text">
-              <div className="name">Fransiskus Arnoldy</div>
-              <div className="role">Mobile Engineer</div>
-              <div className="socialCont">
-                <div className="social">
-                  <i className="fab fa-instagram"></i>
-                  <p>@fransiskus.arnoldy</p>
-                </div>
-                <div className="social">
-                  <i className="fab fa-facebook-square"></i>
-                  <p>ichamf</p>
-                </div>
-              </div>
-            </div>
-            <div className="visual visual--hadi"></div>
           </div>
         </div>
       </div>
