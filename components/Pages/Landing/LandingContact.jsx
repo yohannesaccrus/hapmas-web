@@ -3,20 +3,32 @@ import {
   CustomButton,
   CustomInput
 } from "../../CustomComponents/CustomComponents";
+import Translate from 'react-translate-component'
+
 const LandingContact = () => (
   <div className="layout__container">
     <div className="landingContact">
-      <p className="main">Let's Have a Coffee</p>
-      <p className="sub">and Enhance your Business</p>
-      <p className="info">
-        Fill Out this simple form. Our team will contact you promptly <br /> to
-        discuss the next steps.
-      </p>
+      <Translate 
+      component="p"
+      className="main"
+      content="landingContact.head"
+      />
+      <Translate 
+      component="p"
+      className="sub"
+      content="landingContact.sub"
+      />
+      <Translate 
+      component="p"
+      className="info"
+      content="landingContact.info"
+      />
       <Form className="landingContact__form">
         <div className="landingContact__inputs">
+          
           <CustomInput
             inputType="text"
-            placeholder="Your Name"
+            placeholder="Name"
             inputId="guestName"
             required={true}
             className="landingContact__input"
@@ -46,7 +58,7 @@ const LandingContact = () => (
             rows={5}
           />
         </div>
-        <CustomButton btnText="Send" className="landingContact__btn" btnColor="green" btnType="submit"/>
+        <CustomButton btnText={<Translate content="landingContact.contactBtn" />} className="landingContact__btn" btnColor="green" btnType="submit"/>
       </Form>
     </div>
   </div>

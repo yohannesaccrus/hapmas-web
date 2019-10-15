@@ -1,28 +1,25 @@
 import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
+import Translate from "react-translate-component";
 
 const LandingDesc = () => (
   <div className="layout__container layout__container--grey">
     <div className="landingDesc">
-      <p className="main">Rapid Solution to your Businesses</p>
+      <Translate component="p" className="main" content="landingDesc.head" />
       <div className="landingDesc__cont">
         <div className="landingDesc__head">
           <div className="text">
-            <p className="main">Hapmas is Data Engine</p>
-            <p className="desc">
-              We combine the insight of Business Intelligence and the Variety of
-              Data through Data as a Service into a Data Engine. Hapmas as Data
-              Service give the convenience to user to get any data they need,
-              from public into spesific data which it need direct data gathering
-              from the field.
-            </p>
-            <p className="desc">
-              We also provide the analytic and insights from the data we
-              retrieved. The analytic and the insights are useful for decision
-              support in marketing needs, improving your business by optimalize
-              your production process, and also as a prediction of what the
-              company will be.
-            </p>
+            <p className="main">Hapmas Data Engine</p>
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.p1"
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.p2"
+            />
           </div>
           <div className="visual">
             <img src="/static/index/solution_pict1.webp" alt="solutionImg" />
@@ -35,14 +32,22 @@ const LandingDesc = () => (
               alt="cardIcon"
               className="icon"
             />
-            <p className="main">
-              Open Source <span className="blue">Free</span> Scrapping Data
-            </p>
-            <p className="desc">
-              We serve an open-source data that can be used for business
-              development, research, or even education purposes.
-            </p>
-            <div className="link link--blue">Open Data</div>
+            <Translate
+              component="p"
+              className="main"
+              content="landingDesc.card1Title"
+              unsafe={true}
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.card1Desc"
+            />
+            <Translate
+              component="div"
+              className="link link--blue"
+              content="landingDesc.card1Link"
+            />
           </div>
 
           <div className="landingDesc__card">
@@ -51,14 +56,22 @@ const LandingDesc = () => (
               alt="cardIcon"
               className="icon"
             />
-            <p className="main">
-              <span className="green">Premium</span> Web + Socmed Scrapping
-            </p>
-            <p className="desc">
-              Tell us what and how many of data you need. We'll gladly surf
-              accross the net to make it ready for you.
-            </p>
-            <div className="link link--blue">See More</div>
+             <Translate
+              component="p"
+              className="main"
+              content="landingDesc.card2Title"
+              unsafe={true}
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.card2Desc"
+            />
+            <Translate
+              component="div"
+              className="link link--blue"
+              content="landingDesc.card2Link"
+            />
           </div>
 
           <div className="landingDesc__card">
@@ -67,13 +80,22 @@ const LandingDesc = () => (
               alt="cardIcon"
               className="icon"
             />
-            <p className="main">Data Gathering</p>
-            <p className="desc">
-              Need direct data gathering throughout the country ? nevermind,
-              We'll gladly handle it. We gather it, analyze it, and deliver it
-              to you.
-            </p>
-            <div className="link link--blue">See More</div>
+             <Translate
+              component="p"
+              className="main"
+              content="landingDesc.card3Title"
+              unsafe={true}
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.card3Desc"
+            />
+            <Translate
+              component="div"
+              className="link link--blue"
+              content="landingDesc.card3Link"
+            />
           </div>
 
           <div className="landingDesc__card">
@@ -82,12 +104,22 @@ const LandingDesc = () => (
               alt="cardIcon"
               className="icon"
             />
-            <p className="main">Data Analytic and Optimalization</p>
-            <p className="desc">
-              Get your insight, prediction, and solution for your business
-              development based on your own company data.
-            </p>
-            <div className="link link--blue">See More</div>
+             <Translate
+              component="p"
+              className="main"
+              content="landingDesc.card4Title"
+              unsafe={true}
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.card4Desc"
+            />
+            <Translate
+              component="div"
+              className="link link--blue"
+              content="landingDesc.card4Link"
+            />
           </div>
 
           <div className="landingDesc__card">
@@ -96,12 +128,22 @@ const LandingDesc = () => (
               alt="cardIcon"
               className="icon"
             />
-            <p className="main">Marketing Tools</p>
-            <p className="desc">
-              Your marketing campaign and promotion activity will be done more
-              easily with the help from our rangers.
-            </p>
-            <div className="link link--blue">See More</div>
+            <Translate
+              component="p"
+              className="main"
+              content="landingDesc.card5Title"
+              unsafe={true}
+            />
+            <Translate
+              component="p"
+              className="desc"
+              content="landingDesc.card5Desc"
+            />
+            <Translate
+              component="div"
+              className="link link--blue"
+              content="landingDesc.card5Link"
+            />
           </div>
 
           <div className="landingDesc__card landingDesc__card--btn">
@@ -117,7 +159,9 @@ const LandingDesc = () => (
               duration={2000}
             >
               <CustomButton
-                btnText="Contact Us"
+                btnText={
+                  <Translate content="navBar.navContact" />
+                }
                 btnType="button"
                 btnColor="blue"
                 className="landingDesc__btn"

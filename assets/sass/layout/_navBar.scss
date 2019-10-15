@@ -31,9 +31,9 @@
       height: 100%;
       width: 10rem;
       object-fit: contain;
-      transition: all .5s ease-out;
+      transition: all 0.5s ease-out;
       &:hover {
-        transform: scale(.95);
+        transform: scale(0.95);
       }
       @include respond-to("bigphone") {
         width: 12rem;
@@ -137,20 +137,59 @@
     &--contact {
       background-color: $green1;
       color: $white1;
-      padding: .5rem 1.5rem;
+      transition: all 0.5s ease-out;
       @include rounded(10px);
       &:hover {
-        @include rounded(20px);
-        padding: .8rem 1.5rem;
-      }
-      @include respond-to("ultra") {
-        padding: .8rem 1.5rem;
+        background-color: $green3;
       }
       i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
         transform: rotate(-30deg);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         font-size: 1.8rem;
+      }
+    }
+    &--select {
+      margin-left: 1rem;
+      select {
+        background: transparent;
+        border: none;
+        color: $grey3;
+        font-weight: 500;
+      }
+      &:hover {
+        @include bgLinear(to right, $white1, $white1);
+      }
+      &:focus {
+        outline: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+    }
+    &Select {
+      font-size: 1.6rem;
+      margin: auto 0;
+      position: absolute;
+      right: 15%;
+      padding-top: .2rem;
+      @include respond-to("landscape") {
+        right: 12%;
+      }
+      @include respond-to("medium") {
+        right: 14%;
+      }
+      @include respond-to("large") {
+        padding-top: .5rem;
+        font-size: 1.8rem;
+      }
+      @include respond-to("desktop") {
+        display: none;
+      }
+      select {
+        background: none;
+        border: none;
+        color: $grey3;
+        font-weight: 500;
       }
     }
   }

@@ -172,7 +172,10 @@
       }
       @include respond-to("desktop") {
         transform: scale(.7);
-        top: 32%;
+        top: 35%;
+      }
+      @include respond-to("huge") {
+        top: 34%;
       }
     }
   }

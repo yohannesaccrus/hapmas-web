@@ -1,21 +1,34 @@
 import { Link as ScrollLink } from "react-scroll";
 import { Row, Col } from "reactstrap";
+import Translate from "react-translate-component";
+
 const Footer = () => (
   <div className="footer">
     <Row>
       <Col xs="6" xl="4">
-        <div className="main">Company</div>
-        <div className="link">Tentang Kami</div>
-        <div className="link">Kontak</div>
-        <div className="link">News</div>
+        <Translate component="div" className="main" content="footer.company" />
+        <Translate component="div" className="link" content="footer.about" />
+        <ScrollLink
+          to="landing-contact"
+          spy={true}
+          smooth={true}
+          duration={2000}
+        >
+          <Translate
+            component="div"
+            className="link"
+            content="footer.contact"
+          />
+        </ScrollLink>
+        <Translate component="div" className="link" content="footer.news" />
       </Col>
       <Col xs="6" xl="4">
-        <div className="main">Services</div>
+        <Translate component="div" className="main" content="footer.service" />
         <div className="link">Hapmas Ranger</div>
         <div className="link">Hapmas Open Data</div>
       </Col>
       <Col xs="12" xl="4">
-        <div className="main">Stay With Us !</div>
+        <Translate component="div" className="main" content="footer.social" />
         <div className="footer__icons">
           <a href="https://www.instagram.com/hapmas.id/?hl=en" target="_blank">
             <i className="fab fa-instagram" />

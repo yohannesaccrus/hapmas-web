@@ -1,9 +1,17 @@
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import { Collapse, Row, Col } from "reactstrap";
+import counterpart from "counterpart";
+import Translate from "react-translate-component";
+import en from "../../lang/en";
+import ind from "../../lang/ind";
+
+counterpart.registerTranslations("en", en);
+counterpart.registerTranslations("ind", ind);
+counterpart.setLocale("en");
 
 class NavBar extends React.Component {
-  state = { collapse: false, serviceCollapse: false };
+  state = { collapse: false, serviceCollapse: false, lang: "en" };
 
   toggle = () => {
     this.setState({ collapse: !this.state.collapse });
@@ -11,6 +19,11 @@ class NavBar extends React.Component {
 
   toggleService = () => {
     this.setState({ serviceCollapse: !this.state.serviceCollapse });
+  };
+
+  onLangChange = e => {
+    this.setState({ lang: e.target.value });
+    counterpart.setLocale(e.target.value);
   };
 
   render() {
@@ -26,15 +39,16 @@ class NavBar extends React.Component {
 
           <Col xs="2" xl="10" className="navBar__menus">
             <Link href="/">
-              <div className="navBar__menu">Home</div>
+              <Translate content="navBar.navHome" className="navBar__menu" />
+              {/* <div className="navBar__menu">Home</div> */}
             </Link>
 
             <Link href="/about">
-              <div className="navBar__menu">About Us</div>
+              <Translate content="navBar.navAbout" className="navBar__menu" />
             </Link>
 
             <Link href="/team">
-              <div className="navBar__menu">Our Team</div>
+              <Translate content="navBar.navTeam" className="navBar__menu" />
             </Link>
 
             <Link href="/FAQ">
@@ -51,11 +65,25 @@ class NavBar extends React.Component {
                 <a>
                   <div className="navBar__menu navBar__menu--contact">
                     <i className="fas fa-phone-volume"></i>
-                    Contact Us
+                    <Translate content="navBar.navContact" />
                   </div>
                 </a>
               </ScrollLink>
             </Link>
+
+            <div className="navBar__menu navBar__menu--select">
+              <select value={this.state.lang} onChange={this.onLangChange}>
+                <option value="en">ENG</option>
+                <option value="ind">IND</option>
+              </select>
+            </div>
+          </Col>
+
+          <Col xs="2" sm="1" md="1" className="navBar__menuSelect">
+          <select value={this.state.lang} onChange={this.onLangChange}>
+                <option value="en">ENG</option>
+                <option value="ind">IND</option>
+              </select>
           </Col>
 
           <Col xs="2" className="navBar__toggler">

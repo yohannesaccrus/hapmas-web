@@ -1,4 +1,5 @@
 import Layout from "../components/Layout/Layout";
+import Translate from "react-translate-component";
 
 const AboutUs = () => (
   <Layout>
@@ -6,25 +7,15 @@ const AboutUs = () => (
       <div className="about">
         <div className="main">
           <img src="/static/index/discover_ellips3.webp" alt="circle" />
-          <p>Reveal the treasure behind Data</p>
+          <Translate content="about.head" component="p" />
         </div>
         <div className="about__first">
           <div className="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-              recusandae repellendus, ut, sequi, et atque culpa architecto
-              perferendis mollitia vel quam obcaecati vero! Repudiandae
-              architecto excepturi harum minima, pariatur similique?
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-              recusandae repellendus, ut, sequi, et atque culpa architecto
-              perferendis mollitia vel quam pariatur similique?
-            </p>
+            <Translate content="about.p1" component="p" />
+            <Translate content="about.p2" component="p" />
           </div>
           <div className="visual">
-            <img src="http://bit.ly/2pkB7pi" alt="img" className="pict1" />
+            <img src="/static/index/aboutLogo.webp" alt="img" className="pict1" />
             <img
               src="/static/index/discover_pict1.webp"
               alt="img"
@@ -34,20 +25,23 @@ const AboutUs = () => (
         </div>
 
         <div className="main main--second">
-          <p>Our Services Target</p>
+          <Translate content="about.head2" component="p" />
         </div>
         <div className="about__second">
           <div className="about__cardCont">
             <div className="about__card">
-              <img src="http://bit.ly/2pjBuQE" alt="cardImg" />
+              <img src="http://bit.ly/2pj7pB0" alt="cardImg" />
               <div className="text">
-                <p className="title">Lorem Ipsum</p>
-                <p className="desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  nisi inventore ad iure odio harum expedita dolore tempore
-                  natus, reiciendis hic blanditiis eum corrupti voluptate culpa
-                  fugit reprehenderit eligendi! Dignissimos!
-                </p>
+                <Translate
+                  content="about.card1Title"
+                  className="title"
+                  component="p"
+                />
+                <Translate
+                  content="about.card1Desc"
+                  className="desc"
+                  component="p"
+                />
               </div>
               <img
                 src="/static/index/discover_pict1.webp"
@@ -56,15 +50,18 @@ const AboutUs = () => (
               />
             </div>
             <div className="about__card">
-              <img src="http://bit.ly/2MG6EKf" alt="cardImg" />
+              <img src="http://bit.ly/2nN9g0t" alt="cardImg" />
               <div className="text">
-                <p className="title">Lorem Ipsum</p>
-                <p className="desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  nisi inventore ad iure odio harum expedita dolore tempore
-                  natus, reiciendis hic blanditiis eum corrupti voluptate culpa
-                  fugit reprehenderit eligendi! Dignissimos!
-                </p>
+              <Translate
+                  content="about.card2Title"
+                  className="title"
+                  component="p"
+                />
+                <Translate
+                  content="about.card2Desc"
+                  className="desc"
+                  component="p"
+                />
               </div>
               <img
                 src="/static/index/discover_pict2.webp"
@@ -73,15 +70,18 @@ const AboutUs = () => (
               />
             </div>
             <div className="about__card">
-              <img src="http://bit.ly/2ph4lFv" alt="cardImg" />
+              <img src="http://bit.ly/33BPCDF" alt="cardImg" />
               <div className="text">
-                <p className="title">Lorem Ipsum</p>
-                <p className="desc">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  nisi inventore ad iure odio harum expedita dolore tempore
-                  natus, reiciendis hic blanditiis eum corrupti voluptate culpa
-                  fugit reprehenderit eligendi! Dignissimos!
-                </p>
+              <Translate
+                  content="about.card3Title"
+                  className="title"
+                  component="p"
+                />
+                <Translate
+                  content="about.card3Desc"
+                  className="desc"
+                  component="p"
+                />
               </div>
               <img
                 src="/static/index/discover_pict3.webp"

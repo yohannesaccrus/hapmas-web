@@ -340,7 +340,7 @@ p {
     height: 100%;
     width: 10rem;
     object-fit: contain;
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .navBar__img img:hover {
       transform: scale(0.95); }
     @media (min-width: 410px) {
@@ -436,23 +436,54 @@ p {
     .navBar__menu--contact {
       background-color: #27de8e;
       color: #ffffff;
-      padding: .5rem 1.5rem;
+      transition: all 0.5s ease-out;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px; }
       .navBar__menu--contact:hover {
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        padding: .8rem 1.5rem; }
-      @media (min-width: 2560px) {
-        .navBar__menu--contact {
-          padding: .8rem 1.5rem; } }
+        background-color: #2ed573; }
       .navBar__menu--contact i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
         transform: rotate(-30deg);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         font-size: 1.8rem; }
+    .navBar__menu--select {
+      margin-left: 1rem; }
+      .navBar__menu--select select {
+        background: transparent;
+        border: none;
+        color: #57606f;
+        font-weight: 500; }
+      .navBar__menu--select:hover {
+        background-image: linear-gradient(to right, #ffffff, #ffffff); }
+      .navBar__menu--select:focus {
+        outline: 0 !important;
+        box-shadow: none !important;
+        border: none !important; }
+    .navBar__menuSelect {
+      font-size: 1.6rem;
+      margin: auto 0;
+      position: absolute;
+      right: 15%;
+      padding-top: .2rem; }
+      @media (min-width: 480px) {
+        .navBar__menuSelect {
+          right: 12%; } }
+      @media (min-width: 768px) {
+        .navBar__menuSelect {
+          right: 14%; } }
+      @media (min-width: 992px) {
+        .navBar__menuSelect {
+          padding-top: .5rem;
+          font-size: 1.8rem; } }
+      @media (min-width: 1200px) {
+        .navBar__menuSelect {
+          display: none; } }
+      .navBar__menuSelect select {
+        background: none;
+        border: none;
+        color: #57606f;
+        font-weight: 500; }
 
 .under__img {
   width: 25rem;
@@ -1454,7 +1485,10 @@ p {
     @media (min-width: 1200px) {
       .about__card .illust {
         transform: scale(0.7);
-        top: 32%; } }
+        top: 35%; } }
+    @media (min-width: 1920px) {
+      .about__card .illust {
+        top: 34%; } }
 
 .team .main {
   position: relative; }
@@ -1538,7 +1572,8 @@ p {
       .team__card .text .socialCont .social {
         display: flex;
         align-items: center;
-        transition: all .3s ease-out; }
+        transition: all .3s ease-out;
+        color: #57606f; }
         .team__card .text .socialCont .social:not(:last-child) {
           margin-bottom: 1rem; }
           @media (min-width: 1200px) {
@@ -1557,7 +1592,6 @@ p {
           font-size: 1.8rem; }
   .team__card .visual {
     flex-basis: 40%;
-    background: url("http://bit.ly/31igSpy");
     background-size: cover;
     background-position: center center;
     position: relative; }

@@ -14,13 +14,16 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "^4.3.1",
+    "counterpart": "^0.18.6",
     "next": "^9.0.7",
     "node-sass": "^4.12.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-interpolate-component": "^0.12.0",
     "react-multi-language": "^0.4.2",
     "react-scroll": "^1.7.14",
     "react-slick": "^0.25.2",
+    "react-translate-component": "^0.15.1",
     "reactstrap": "^8.0.1",
     "slick-carousel": "^1.8.1"
   }

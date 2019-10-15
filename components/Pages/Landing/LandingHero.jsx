@@ -1,17 +1,25 @@
 import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
+import Translate from "react-translate-component";
 
 const LandingHero = () => (
   <div className="layout__container">
     <div className="landingHero">
       <div className="landingHero__text">
-        <p className="main">
-          Let Data Improve
-          <br /> Your Business
-        </p>
-        <div className="sub">
-          Find various data in Hapmas, <br /> to grow up your business
-        </div>
+        <Translate
+          content="landingHero.tagLine"
+          component="p"
+          className="main"
+          unsafe={true}
+        />
+
+        <Translate
+          content="landingHero.info"
+          component="div"
+          className="sub"
+          unsafe={true}
+        />
+
         <div className="landingHero__btnCont">
           <ScrollLink
             to="landing-contact"
@@ -20,7 +28,7 @@ const LandingHero = () => (
             duration={2000}
           >
             <CustomButton
-              btnText="Contact Us"
+              btnText={<Translate content="navBar.navContact" />}
               btnColor="green"
               btnType="button"
               className="landingHero__btn"
