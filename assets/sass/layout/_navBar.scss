@@ -20,6 +20,9 @@
     padding: 2rem 8rem;
   }
   @include respond-to("desktop") {
+    padding: 2rem 10%;
+  }
+  @media (min-width: 1440px) and (max-width: 1919px) {
     padding: 2rem 15%;
   }
   @include respond-to("ultra") {
@@ -121,12 +124,16 @@
     @include rounded(5px);
     @include respond-to("desktop") {
       font-size: 1.3rem;
+      padding: .5rem .8rem;
     }
-    @include respond-to("desktop") {
+    @include respond-to("huge") {
       font-size: 1.5rem;
     }
     &:not(:last-child) {
       margin-right: 2rem;
+      @include respond-to("desktop") {
+        margin-right: 1rem;
+      }
     }
     &:hover {
       color: $white1;
@@ -150,7 +157,6 @@
       }
     }
     &--select {
-      margin-left: 1rem;
       select {
         background: transparent;
         border: none;

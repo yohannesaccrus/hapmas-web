@@ -64,7 +64,6 @@ class NavBar extends React.Component {
               >
                 <a>
                   <div className="navBar__menu navBar__menu--contact">
-                    <i className="fas fa-phone-volume"></i>
                     <Translate content="navBar.navContact" />
                   </div>
                 </a>

@@ -72,8 +72,11 @@
           line-height: 2.2rem;
          }
          @include respond-to("desktop") {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           line-height: 2.6rem;
+        }
+        @include respond-to("huge") {
+          font-size: 1.5rem;
         }
       }
     }
@@ -172,7 +175,8 @@
       }
       @include respond-to("desktop") {
         transform: scale(.7);
-        top: 35%;
+        top: 32%;
+        right: -4rem;
       }
       @include respond-to("huge") {
         top: 34%;
