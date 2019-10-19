@@ -43,6 +43,7 @@ const Footer = () => (
         <div className="footer__info">
           download <span>Hapmas Ranger</span> app
         </div>
+        <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="logo" className="footer__playstore"/>
       </Col>
       <Col xs="12">
         <img

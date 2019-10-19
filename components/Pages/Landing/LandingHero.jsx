@@ -42,6 +42,7 @@ const LandingHero = () => (
         </div>
       </div>
       <div className="landingHero__visual">
+        {/* <img src={require("../../../static/index/hero1.webp")} alt="altHero"/> */}
         <img src="/static/index/hero1.webp" alt="heroImg" />
       </div>
     </div>

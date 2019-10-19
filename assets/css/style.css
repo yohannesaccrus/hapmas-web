@@ -137,6 +137,10 @@ p {
             margin-top: -.3rem; }
           .footer__icons i:active {
             margin-top: 0; } }
+      @media (min-width: 1920px) {
+        .footer__icons i {
+          font-size: 3rem;
+          margin-right: 2rem; } }
   .footer__info {
     cursor: pointer;
     text-align: center;
@@ -247,6 +251,26 @@ p {
       transform: scale(1.2);
       right: 15%;
       top: 40%; } }
+  .footer__playstore {
+    width: 100%;
+    height: 6rem;
+    object-fit: contain;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all .5s ease; }
+    @media (min-width: 768px) {
+      .footer__playstore {
+        transform: scale(1.2);
+        margin-bottom: 3rem; } }
+    @media (min-width: 1200px) {
+      .footer__playstore {
+        transform: scale(1);
+        margin-bottom: 3rem; }
+        .footer__playstore:hover {
+          transform: scale(1.07); }
+        .footer__playstore:active {
+          transform: scale(0.95); } }
 
 .layout__container {
   overflow: hidden;
