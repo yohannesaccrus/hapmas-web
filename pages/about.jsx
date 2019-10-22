@@ -6,7 +6,7 @@ const AboutUs = () => (
     <div className="layout__container">
       <div className="about">
         <div className="main">
-          <img src="/static/index/discover_ellips3.webp" alt="circle" />
+          <img src={require("../assets/img/landingDiscover/discover_ellips3.svg")} alt="circle" />
           <Translate content="about.head" component="p" />
         </div>
         <div className="about__first">
@@ -15,9 +15,9 @@ const AboutUs = () => (
             <Translate content="about.p2" component="p" />
           </div>
           <div className="visual">
-            <img src="/static/index/aboutLogo.webp" alt="img" className="pict1" />
+            <img src={require("../assets/img/about/aboutlogo.svg")} alt="img" className="pict1" />
             <img
-              src="/static/index/discover_pict1.webp"
+              src={require("../assets/img/landingDiscover/discover_pict1.svg")}
               alt="img"
               className="pict2"
             />
@@ -44,7 +44,7 @@ const AboutUs = () => (
                 />
               </div>
               <img
-                src="/static/index/discover_pict1.webp"
+                src={require("../assets/img/landingDiscover/discover_pict1.svg")}
                 alt="img"
                 className="illust"
               />
@@ -64,7 +64,7 @@ const AboutUs = () => (
                 />
               </div>
               <img
-                src="/static/index/discover_pict2.webp"
+               src={require("../assets/img/landingDiscover/discover_pict2.svg")}
                 alt="img"
                 className="illust"
               />
@@ -84,7 +84,7 @@ const AboutUs = () => (
                 />
               </div>
               <img
-                src="/static/index/discover_pict3.webp"
+                src={require("../assets/img/landingDiscover/discover_pict3.svg")}
                 alt="img"
                 className="illust"
               />

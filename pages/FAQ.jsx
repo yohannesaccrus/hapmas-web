@@ -8,7 +8,7 @@ const FAQ = () => (
     <div className="layout__container">
       <div className="FAQ">
         <div className="main">
-          <img src="/static/index/discover_ellips2.webp" alt="circle" />
+          <img src={require("../assets/img/landingDiscover/discover_ellips3.svg")} alt="circle" />
           <Translate component="p" content="faq.head" />
         </div>
         <div className="FAQ__cont">

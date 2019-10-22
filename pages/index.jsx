@@ -15,14 +15,13 @@ const Index = () => (
     </Element>
     <LandingDiscover />
     <div className="layout__wavepart">
-      <img src="/static/index/wave.svg" alt="wave" className="layout__wave1" />
+      <img src={require("../assets/img/index/wave.svg")} alt="wave" className="layout__wave1" />
     </div>
     <LandingDesc />
     <LandingWorks />
     <Element id="landing-contact">
       <LandingContact />
     </Element>
-    
   </Layout>
 );
 

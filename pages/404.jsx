@@ -6,7 +6,7 @@ const ErrorPage = () => (
   <Layout>
     <div className="layout__container">
       <div className="under">
-        <img src="/static/index/const.svg" alt="img" className="under__img" />
+        <img src={require("../assets/img/404/const.svg")} alt="img" className="under__img" />
         <div className="main">Page Still Under Construction</div>
         <div className="sub">Be Back Soon !</div>
         <Link href="/">

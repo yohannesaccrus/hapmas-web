@@ -33,14 +33,16 @@ class NavBar extends React.Component {
         <Row>
           <Col xs="10" xl="2" className="navBar__img">
             <Link href="/">
-              <img src="/static/navbar/hapmas-min.webp" alt="hapmasLogo" />
+              <img
+                src={require("../../assets/img/navbar/hapmas-min.svg")}
+                alt="hapmasLogo"
+              />
             </Link>
           </Col>
 
           <Col xs="2" xl="10" className="navBar__menus">
             <Link href="/">
               <Translate content="navBar.navHome" className="navBar__menu" />
-              {/* <div className="navBar__menu">Home</div> */}
             </Link>
 
             <Link href="/about">
@@ -79,10 +81,10 @@ class NavBar extends React.Component {
           </Col>
 
           <Col xs="2" sm="1" md="1" className="navBar__menuSelect">
-          <select value={this.state.lang} onChange={this.onLangChange}>
-                <option value="en">ENG</option>
-                <option value="ind">IND</option>
-              </select>
+            <select value={this.state.lang} onChange={this.onLangChange}>
+              <option value="en">ENG</option>
+              <option value="ind">IND</option>
+            </select>
           </Col>
 
           <Col xs="2" className="navBar__toggler">
@@ -98,15 +100,17 @@ class NavBar extends React.Component {
             <Collapse isOpen={collapse}>
               <div className="navBar__collapse">
                 <Link href="/">
-                  <div className="navBar__link">Home</div>
+                  <div className="navBar__link">
+                    <Translate content="navBar.navHome" />
+                  </div>
                 </Link>
 
                 <Link href="/about">
-                  <div className="navBar__link">About Us</div>
+                  <div className="navBar__link"><Translate content="navBar.navAbout" /></div>
                 </Link>
 
                 <Link href="/team">
-                  <div className="navBar__link">Our Team</div>
+                  <div className="navBar__link"><Translate content="navBar.navTeam" /></div>
                 </Link>
 
                 <Link href="/FAQ">

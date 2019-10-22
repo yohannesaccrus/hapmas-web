@@ -35,15 +35,14 @@ const LandingHero = () => (
             />
           </ScrollLink>
           <img
-            src="/static/index/hero_dots.webp"
+            src={require("../../../assets/img/landingHero/hero_dots.svg")}
             alt="dots"
             className="landingHero__dots"
           />
         </div>
       </div>
       <div className="landingHero__visual">
-        {/* <img src={require("../../../static/index/hero1.webp")} alt="altHero"/> */}
-        <img src="/static/index/hero1.webp" alt="heroImg" />
+        <img src={require("../../../assets/img/landingHero/hero1.svg")} alt="heroImg" />
       </div>
     </div>
   </div>

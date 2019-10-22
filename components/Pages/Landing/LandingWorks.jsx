@@ -7,13 +7,13 @@ const LandingWorks = () => (
       <Translate component="p" className="main" content="landingWork.head" />
       <div className="landingWorks__cont">
         <img
-          src="/static/index/work1.webp"
+          src={require("../../../assets/img/landingWorks/work1.svg")}
           alt="blob"
           className="landingWorks__contImg"
         />
         <div className="landingWorks__card">
           <img
-            src="/static/index/work_target.webp"
+            src={require("../../../assets/img/landingWorks/work_target.svg")}
             alt="illust"
             className="cardImg"
           />
@@ -32,7 +32,7 @@ const LandingWorks = () => (
         </div>
         <div className="landingWorks__card">
           <img
-            src="/static/index/work_diploma.webp"
+            src={require("../../../assets/img/landingWorks/work_diploma.svg")}
             alt="illust"
             className="cardImg"
           />
@@ -51,7 +51,7 @@ const LandingWorks = () => (
         </div>
         <div className="landingWorks__card">
           <img
-            src="/static/index/work_chart.webp"
+            src={require("../../../assets/img/landingWorks/work_chart.svg")}
             alt="illust"
             className="cardImg"
           />

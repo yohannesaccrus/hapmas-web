@@ -22,13 +22,13 @@ const LandingDesc = () => (
             />
           </div>
           <div className="visual">
-            <img src="/static/index/solution_pict1.webp" alt="solutionImg" />
+            <img src={require("../../../assets/img/landingDesc/solution_pict1.svg")} alt="solutionImg" />
           </div>
         </div>
         <div className="landingDesc__cardCont">
           <div className="landingDesc__card">
             <img
-              src="/static/index/solution_ticket.webp"
+              src={require("../../../assets/img/landingDesc/solution_ticket.svg")}
               alt="cardIcon"
               className="icon"
             />
@@ -52,7 +52,7 @@ const LandingDesc = () => (
 
           <div className="landingDesc__card">
             <img
-              src="/static/index/solution_search.webp"
+              src={require("../../../assets/img/landingDesc/solution_search.svg")}
               alt="cardIcon"
               className="icon"
             />
@@ -76,7 +76,7 @@ const LandingDesc = () => (
 
           <div className="landingDesc__card">
             <img
-              src="/static/index/solution_crane.webp"
+              src={require("../../../assets/img/landingDesc/solution_crane.svg")}
               alt="cardIcon"
               className="icon"
             />
@@ -100,7 +100,7 @@ const LandingDesc = () => (
 
           <div className="landingDesc__card">
             <img
-              src="/static/index/solution_analytic.webp"
+              src={require("../../../assets/img/landingDesc/solution_analytic.svg")}
               alt="cardIcon"
               className="icon"
             />
@@ -124,7 +124,7 @@ const LandingDesc = () => (
 
           <div className="landingDesc__card">
             <img
-              src="/static/index/solution_marketing.webp"
+              src={require("../../../assets/img/landingDesc/solution_marketing.svg")}
               alt="cardIcon"
               className="icon"
             />
@@ -148,7 +148,7 @@ const LandingDesc = () => (
 
           <div className="landingDesc__card landingDesc__card--btn">
             <img
-              src="/static/index/desc_btn.webp"
+              src={require("../../../assets/img/landingDesc/desc_btn.svg")}
               alt="haha"
               className="landingDesc__btnImage"
             />
@@ -168,7 +168,7 @@ const LandingDesc = () => (
               />
             </ScrollLink>
             <img
-              src="/static/index/hero_dots.webp"
+              src={require("../../../assets/img/landingHero/hero_dots.svg")}
               alt="dots"
               className="landingDesc__btnDots"
             />

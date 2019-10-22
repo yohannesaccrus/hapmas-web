@@ -5,7 +5,7 @@ const Team = () => (
     <div className="layout__container">
       <div className="team">
         <div className="main">
-          <img src="/static/index/discover_ellips2.webp" alt="circle" />
+        <img src={require("../assets/img/landingDiscover/discover_ellips2.svg")} alt="circle" />
           <p>Meet Hapmas Team</p>
         </div>
         <div className="team__cardCont">
@@ -147,6 +147,41 @@ const Team = () => (
 
           <div className="team__card">
             <div className="text">
+              <div className="name">Denny Angesti Pratama</div>
+              <div className="role">Front End Engineer</div>
+              <div className="socialCont">
+                <a
+                  href="https://www.instagram.com/dennyangesti/"
+                  target="_blank"
+                  className="social"
+                >
+                  <i className="fab fa-instagram"></i>
+                  <p>@dennyangesti</p>
+                </a>
+                <a
+                  href="https://id.linkedin.com/in/denny-angesti-pratama-904213192"
+                  target="_blank"
+                >
+                  <div className="social">
+                    <i className="fab fa-linkedin"></i>
+                    <p>Denny Angesti</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              className="visual"
+              style={{ backgroundImage: "url(http://bit.ly/2BbhsKY)" }}
+            >
+              <div
+                className="visual__overlay"
+                style={{ backgroundImage: "url(http://bit.ly/2Bc03Se)" }}
+              ></div>
+            </div>
+          </div>
+
+          <div className="team__card">
+            <div className="text">
               <div className="name">Agil Haykal A.</div>
               <div className="role">Partner</div>
               <div className="socialCont">
@@ -178,6 +213,13 @@ const Team = () => (
                 style={{ backgroundImage: "url(http://bit.ly/2Bc03Se)" }}
               ></div>
             </div>
+          </div>
+
+          <div className="team__card" style={{boxShadow: "none"}}>
+           
+          </div>
+          <div className="team__card" style={{boxShadow: "none"}}>
+            
           </div>
         </div>
       </div>

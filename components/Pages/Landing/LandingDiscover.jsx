@@ -11,11 +11,11 @@ const LandingDiscover = () => (
       <div className="landingDiscover__cont">
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src="/static/index/discover_pict1.webp" alt="discover" />
+            <img src={require("../../../assets/img/landingDiscover/discover_pict1.svg")} alt="discover" />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src="/static/index/discover_ellips1.webp" alt="circle" />
+              <img src={require("../../../assets/img/landingDiscover/discover_ellips1.svg")} alt="circle" />
               <Translate
                 component="p"
                 className="title"
@@ -31,11 +31,11 @@ const LandingDiscover = () => (
         </div>
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src="/static/index/discover_pict2.webp" alt="discover" />
+            <img src={require("../../../assets/img/landingDiscover/discover_pict2.svg")} alt="discover" />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src="/static/index/discover_ellips2.webp" alt="circle" />
+              <img src={require("../../../assets/img/landingDiscover/discover_ellips2.svg")} alt="circle" />
               <Translate
                 component="p"
                 className="title"
@@ -51,11 +51,11 @@ const LandingDiscover = () => (
         </div>
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src="/static/index/discover_pict3.webp" alt="discover" />
+            <img src={require("../../../assets/img/landingDiscover/discover_pict3.svg")} alt="discover" />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src="/static/index/discover_ellips3.webp" alt="circle" />
+              <img src={require("../../../assets/img/landingDiscover/discover_ellips3.svg")} alt="circle" />
               <Translate
                 component="p"
                 className="title"

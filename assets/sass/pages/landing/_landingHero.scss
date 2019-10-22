@@ -1,6 +1,7 @@
 .landingHero {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
   &__text {
     flex-basis: 60%;
     @include respond-to("desktop") {
@@ -10,7 +11,7 @@
       margin-top: 0;
     }
     .main {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: 500;
       line-height: 3rem;
       .br {
@@ -69,7 +70,8 @@
       width: 23rem;
       height: 23rem;
       object-fit: contain;
-      left: 1rem;
+      left: 1.5rem;
+      top: -2rem;
       @include respond-to("landscape") {
         transform: scale(1.3);
         left: 4rem;
@@ -99,11 +101,12 @@
     }
   }
   &__btnCont {
-    position: relative;
+    margin-top: 3rem;
+    position: absolute;
+    text-align: center;
   }
   &__btn {
     font-size: 1.3rem;
-    margin-top: 3rem;
     padding: 0.8rem 3.5rem;
     z-index: 2;
     transition: all 0.3s ease-out;
@@ -137,38 +140,15 @@
   }
   &__dots {
     position: absolute;
-    width: 55%;
-    left: 15%;
-    bottom: -1.1rem;
-    z-index: 1;
-    @include respond-to("bigphone") {
-      left: 4%;
-    }
-    @include respond-to("landscape") {
-      width: 30%;
-      bottom: -1.2rem;
-    }
-    @include respond-to("medium") {
-      left: 6%;
-    }
-    @include respond-to("large") {
-      left: 4%;
-      bottom: -1.4rem;
-    }
+    @include centerH;
+    width: 65%;
+    bottom: -1.2rem;
     @include respond-to("desktop") {
-      width: 25%;
-      left: 4%;
-      bottom: -1.7rem;
+      bottom: -1.6rem;
+      width: 70%;
     }
     @include respond-to("huge") {
-      left: 2.8%;
-      width: 23%;
-      bottom: -2.2rem;
-    }
-    @include respond-to("ultra") {
-      left: 4.5%;
-      width: 22%;
-      bottom: -2.2rem;
+      bottom: -1.8rem;
     }
   }
 }

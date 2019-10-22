@@ -47,7 +47,7 @@ const Footer = () => (
       </Col>
       <Col xs="12">
         <img
-          src="/static/navbar/hapmas-min.webp"
+          src={require("../../assets/img/navbar/hapmas-min.svg")}
           alt="logo"
           className="footer__logo"
         />
@@ -58,12 +58,12 @@ const Footer = () => (
       </Col>
     </Row>
     <img
-      src="/static/footer/footer1.svg"
+      src={require("../../assets/img/footer/footer1.svg")}
       alt="illust1"
       className="footer__illust1"
     />
     <img
-      src="/static/footer/footer2.svg"
+        src={require("../../assets/img/footer/footer2.svg")}
       alt="illust2"
       className="footer__illust2"
     />
