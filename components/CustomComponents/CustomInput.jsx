@@ -6,7 +6,9 @@ const CustomInput = ({
   placeholder,
   required,
   className,
-  rows
+  rows,
+  onChange,
+  value
 }) => (
   <Input
     type={inputType}
@@ -15,6 +17,8 @@ const CustomInput = ({
     required={required}
     className={className}
     rows={rows}
+    onChange={onChange}
+    value={value}
   />
 );
 

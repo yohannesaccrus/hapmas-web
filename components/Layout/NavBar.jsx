@@ -33,44 +33,52 @@ class NavBar extends React.Component {
         <Row>
           <Col xs="10" xl="2" className="navBar__img">
             <Link href="/">
-              <img
-                src={require("../../assets/img/navbar/hapmas-min.svg")}
-                alt="hapmasLogo"
-              />
+              <a>
+                <img
+                  src={require("../../assets/img/navbar/hapmas-min.svg")}
+                  alt="hapmasLogo"
+                />
+              </a>
             </Link>
           </Col>
 
           <Col xs="2" xl="10" className="navBar__menus">
             <Link href="/">
-              <Translate content="navBar.navHome" className="navBar__menu" />
+              <a className="navBar__menu">
+                <Translate content="navBar.navHome"  />
+              </a>
             </Link>
 
             <Link href="/about">
-              <Translate content="navBar.navAbout" className="navBar__menu" />
+              <a className="navBar__menu">
+                <Translate content="navBar.navAbout" />
+              </a>
             </Link>
 
             <Link href="/team">
-              <Translate content="navBar.navTeam" className="navBar__menu" />
+              <a className="navBar__menu">
+                <Translate content="navBar.navTeam" />
+              </a>
             </Link>
 
             <Link href="/FAQ">
-              <div className="navBar__menu">FAQ</div>
+              <a className="navBar__menu">
+                FAQ
+              </a>
             </Link>
 
-            <Link href="/">
-              <ScrollLink
-                to="landing-contact"
-                spy={true}
-                smooth={true}
-                duration={2000}
-              >
-                <a>
-                  <div className="navBar__menu navBar__menu--contact">
-                    <Translate content="navBar.navContact" />
-                  </div>
-                </a>
-              </ScrollLink>
-            </Link>
+            {/* <Link href="/">
+                <ScrollLink
+                  to="landing-contact"
+                  spy={true}
+                  smooth={true}
+                  duration={2000}
+                >
+                  <a className="navBar__menu navBar__menu--contact">
+                      <Translate content="navBar.navContact" />
+                  </a>
+                </ScrollLink>
+            </Link> */}
 
             <div className="navBar__menu navBar__menu--select">
               <select value={this.state.lang} onChange={this.onLangChange}>
@@ -100,38 +108,42 @@ class NavBar extends React.Component {
             <Collapse isOpen={collapse}>
               <div className="navBar__collapse">
                 <Link href="/">
-                  <div className="navBar__link">
-                    <Translate content="navBar.navHome" />
-                  </div>
+                  <a className="navBar__link">
+                      <Translate content="navBar.navHome" />
+                  </a>
                 </Link>
 
                 <Link href="/about">
-                  <div className="navBar__link"><Translate content="navBar.navAbout" /></div>
+                  <a className="navBar__link">
+                      <Translate content="navBar.navAbout" />
+                  </a>
                 </Link>
 
                 <Link href="/team">
-                  <div className="navBar__link"><Translate content="navBar.navTeam" /></div>
+                  <a className="navBar__link">
+                      <Translate content="navBar.navTeam" />
+                  </a>
                 </Link>
 
                 <Link href="/FAQ">
-                  <div className="navBar__link">FAQ</div>
+                  <a className="navBar__link">
+                   FAQ
+                  </a>
                 </Link>
 
-                <Link href="/">
-                  <ScrollLink
-                    to="landing-contact"
-                    spy={true}
-                    smooth={true}
-                    duration={2000}
-                  >
-                    <a>
-                      <div className="navBar__menu navBar__menu--contact">
-                        <i className="fas fa-phone-volume"></i>
-                        Contact Us
-                      </div>
-                    </a>
-                  </ScrollLink>
-                </Link>
+                {/* <Link href="/">
+                    <ScrollLink
+                      to="landing-contact"
+                      spy={true}
+                      smooth={true}
+                      duration={2000}
+                    >
+                      <a className="navBar__menu navBar__menu--contact">
+                          <i className="fas fa-phone-volume"></i>
+                          Contact Us
+                      </a>
+                    </ScrollLink>
+                </Link> */}
 
                 {/* <div className="navBar__link" onClick={this.toggleService}>
                   Layanan
