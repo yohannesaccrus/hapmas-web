@@ -4,10 +4,10 @@ import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/style.css";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title }) => (
   <div>
     <Head>
-      <title>Hapmas Data Engine New</title>
+      <title>{title}</title>
       <link rel="shortcut icon" href="static/icon.png" />
       <link
         rel="stylesheet"

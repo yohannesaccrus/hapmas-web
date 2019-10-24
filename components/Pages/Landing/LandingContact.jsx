@@ -46,17 +46,17 @@ class LandingContact extends Component {
     e.preventDefault();
     console.log(this.state);
     const { name, email, company, message } = this.state;
-    //if (name && email && company && message) {
+    if (name && email && company && message) {
       this.sendContact();
-      // this.setState({
-      //   name: "",
-      //   email: "",
-      //   company: "",
-      //   message: ""
-      // });
-    // } else {
-    //   return alert("all fields required");
-    // }
+      this.setState({
+        name: "",
+        email: "",
+        company: "",
+        message: ""
+      });
+    } else {
+      return alert("all fields required");
+    }
   };
 
   render() {
@@ -80,7 +80,7 @@ class LandingContact extends Component {
             content="landingContact.info"
           />
           <Form className="landingContact__form" onSubmit={this.submitHandler}>
-            {/* <div className="landingContact__inputs"> */}
+            <div className="landingContact__inputs">
             <CustomInput
               inputType="text"
               placeholder="Name"
@@ -108,8 +108,8 @@ class LandingContact extends Component {
               onChange={this.changeHandler}
               value={company}
             />
-            {/* </div>
-            <div className="landingContact__textarea"> */}
+            </div>
+            <div className="landingContact__textarea">
             <CustomInput
               inputType="textarea"
               placeholder="Write a Message"
@@ -120,10 +120,10 @@ class LandingContact extends Component {
               onChange={this.changeHandler}
               value={message}
             />
-            {/* </div> */}
+            </div>
             <CustomButton
-              // btnText={<Translate content="landingContact.contactBtn" />}
-              btnText="Kirim"
+              btnText={<Translate content="landingContact.contactBtn" />}
+              // btnText="Kirim"
               className="landingContact__btn"
               btnColor="green"
               btnType="submit"

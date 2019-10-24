@@ -451,7 +451,7 @@ p {
     @media (min-width: 1200px) {
       .navBar__menu {
         font-size: 1.3rem;
-        padding: .5rem .8rem; } }
+        padding: 0.5rem 0.8rem; } }
     @media (min-width: 1920px) {
       .navBar__menu {
         font-size: 1.5rem; } }
@@ -469,7 +469,7 @@ p {
       border-radius: 5px; }
     .navBar__menu--contact {
       background-color: #27de8e;
-      color: #ffffff;
+      color: #ffffff !important;
       transition: all 0.5s ease-out;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -497,7 +497,7 @@ p {
       margin: auto 0;
       position: absolute;
       right: 15%;
-      padding-top: .2rem; }
+      padding-top: 0.2rem; }
       @media (min-width: 480px) {
         .navBar__menuSelect {
           right: 12%; } }
@@ -506,7 +506,7 @@ p {
           right: 14%; } }
       @media (min-width: 992px) {
         .navBar__menuSelect {
-          padding-top: .5rem;
+          padding-top: 0.5rem;
           font-size: 1.8rem; } }
       @media (min-width: 1200px) {
         .navBar__menuSelect {
@@ -516,6 +516,13 @@ p {
         border: none;
         color: #57606f;
         font-weight: 500; }
+    .navBar__menu.active {
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      background-image: linear-gradient(to right, #27de8e, #2ed573);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
 
 .under__img {
   width: 25rem;

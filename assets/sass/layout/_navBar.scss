@@ -124,7 +124,7 @@
     @include rounded(5px);
     @include respond-to("desktop") {
       font-size: 1.3rem;
-      padding: .5rem .8rem;
+      padding: 0.5rem 0.8rem;
     }
     @include respond-to("huge") {
       font-size: 1.5rem;
@@ -143,7 +143,7 @@
     }
     &--contact {
       background-color: $green1;
-      color: $white1;
+      color: $white1 !important;
       transition: all 0.5s ease-out;
       @include rounded(10px);
       &:hover {
@@ -177,7 +177,7 @@
       margin: auto 0;
       position: absolute;
       right: 15%;
-      padding-top: .2rem;
+      padding-top: 0.2rem;
       @include respond-to("landscape") {
         right: 12%;
       }
@@ -185,7 +185,7 @@
         right: 14%;
       }
       @include respond-to("large") {
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         font-size: 1.8rem;
       }
       @include respond-to("desktop") {
@@ -197,6 +197,12 @@
         color: $grey3;
         font-weight: 500;
       }
+    }
+    &.active {
+      color: $white1;
+      padding: 0.5rem 1rem;
+      @include bgLinear(to right, $green1, $green3);
+      @include rounded(5px);
     }
   }
 }

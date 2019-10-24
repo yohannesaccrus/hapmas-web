@@ -1,7 +1,7 @@
 import Layout from "../components/Layout/Layout";
 
 const Team = () => (
-  <Layout>
+  <Layout title="Hapmas Team">
     <div className="layout__container">
       <div className="team">
         <div className="main">

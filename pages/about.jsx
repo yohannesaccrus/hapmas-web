@@ -2,7 +2,7 @@ import Layout from "../components/Layout/Layout";
 import Translate from "react-translate-component";
 
 const AboutUs = () => (
-  <Layout>
+  <Layout title="Our Short Story">
     <div className="layout__container">
       <div className="about">
         <div className="main">

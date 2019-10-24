@@ -1,10 +1,9 @@
 import Layout from "../components/Layout/Layout";
-import Link from "next/link";
 import { UncontrolledCollapse, Button, CardBody, Card } from "reactstrap";
 import Translate from "react-translate-component";
 
 const FAQ = () => (
-  <Layout>
+  <Layout title="Hapmas FAQ">
     <div className="layout__container">
       <div className="FAQ">
         <div className="main">

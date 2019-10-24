@@ -41,8 +41,13 @@ const LandingHero = () => (
           />
         </div>
       </div>
-      <div className="landingHero__visual">
-        <img src={require("../../../assets/img/landingHero/hero1.svg")} alt="heroImg" />
+      <div
+        className="landingHero__visual"
+      >
+        <img
+          src={require("../../../assets/img/landingHero/hero1.svg")}
+          alt="heroImg"
+        />
       </div>
     </div>
   </div>

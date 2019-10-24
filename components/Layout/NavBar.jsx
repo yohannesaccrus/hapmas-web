@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import Link from "./ActiveLink";
 import { Link as ScrollLink } from "react-scroll";
 import { Collapse, Row, Col } from "reactstrap";
 import counterpart from "counterpart";
@@ -43,42 +44,40 @@ class NavBar extends React.Component {
           </Col>
 
           <Col xs="2" xl="10" className="navBar__menus">
-            <Link href="/">
+            <Link href="/" activeClassName="active">
               <a className="navBar__menu">
-                <Translate content="navBar.navHome"  />
+                <Translate content="navBar.navHome" />
               </a>
             </Link>
 
-            <Link href="/about">
+            <Link href="/about" activeClassName="active">
               <a className="navBar__menu">
                 <Translate content="navBar.navAbout" />
               </a>
             </Link>
 
-            <Link href="/team">
+            <Link href="/team" activeClassName="active">
               <a className="navBar__menu">
                 <Translate content="navBar.navTeam" />
               </a>
             </Link>
 
-            <Link href="/FAQ">
-              <a className="navBar__menu">
-                FAQ
-              </a>
+            <Link href="/FAQ" activeClassName="active">
+              <a className="navBar__menu">FAQ</a>
             </Link>
 
-            {/* <Link href="/">
-                <ScrollLink
-                  to="landing-contact"
-                  spy={true}
-                  smooth={true}
-                  duration={2000}
-                >
-                  <a className="navBar__menu navBar__menu--contact">
-                      <Translate content="navBar.navContact" />
-                  </a>
-                </ScrollLink>
-            </Link> */}
+            <Link href="/">
+              <ScrollLink
+                to="landing-contact"
+                spy={true}
+                smooth={true}
+                duration={2000}
+              >
+                <a className="navBar__menu navBar__menu--contact">
+                  <Translate content="navBar.navContact" />
+                </a>
+              </ScrollLink>
+            </Link>
 
             <div className="navBar__menu navBar__menu--select">
               <select value={this.state.lang} onChange={this.onLangChange}>
@@ -109,29 +108,38 @@ class NavBar extends React.Component {
               <div className="navBar__collapse">
                 <Link href="/">
                   <a className="navBar__link">
-                      <Translate content="navBar.navHome" />
+                    <Translate content="navBar.navHome" />
                   </a>
                 </Link>
 
                 <Link href="/about">
                   <a className="navBar__link">
-                      <Translate content="navBar.navAbout" />
+                    <Translate content="navBar.navAbout" />
                   </a>
                 </Link>
 
                 <Link href="/team">
                   <a className="navBar__link">
-                      <Translate content="navBar.navTeam" />
+                    <Translate content="navBar.navTeam" />
                   </a>
                 </Link>
 
                 <Link href="/FAQ">
-                  <a className="navBar__link">
-                   FAQ
-                  </a>
+                  <a className="navBar__link">FAQ</a>
                 </Link>
+              </div>
+            </Collapse>
+          </div>
+        </Row>
+      </div>
+    );
+  }
+}
 
-                {/* <Link href="/">
+export default NavBar;
+
+{
+  /* <Link href="/">
                     <ScrollLink
                       to="landing-contact"
                       spy={true}
@@ -143,9 +151,11 @@ class NavBar extends React.Component {
                           Contact Us
                       </a>
                     </ScrollLink>
-                </Link> */}
+                </Link> */
+}
 
-                {/* <div className="navBar__link" onClick={this.toggleService}>
+{
+  /* <div className="navBar__link" onClick={this.toggleService}>
                   Layanan
                   <Collapse isOpen={serviceCollapse}>
                     <div className="navBar__secondCollapse">
@@ -157,18 +167,11 @@ class NavBar extends React.Component {
                       </Link>
                     </div>
                   </Collapse>
-                </div> */}
-
-                {/* <Link href="/FAQ">
-                  <div className="navBar__link">FAQ</div>
-                </Link> */}
-              </div>
-            </Collapse>
-          </div>
-        </Row>
-      </div>
-    );
-  }
+                </div> */
 }
 
-export default NavBar;
+{
+  /* <Link href="/FAQ">
+                  <div className="navBar__link">FAQ</div>
+                </Link> */
+}

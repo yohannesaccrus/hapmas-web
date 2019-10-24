@@ -9,7 +9,7 @@ import {
 } from "../components/Pages/Landing/Landing";
 
 const Index = () => (
-  <Layout>
+  <Layout title="Hapmas">
     <Element id="landing-hero">
       <LandingHero />
     </Element>
