@@ -73,9 +73,9 @@ class NavBar extends React.Component {
                 smooth={true}
                 duration={2000}
               >
-                <a className="navBar__menu navBar__menu--contact">
+                <div className="navBar__menu navBar__menu--contact">
                   <Translate content="navBar.navContact" />
-                </a>
+                </div>
               </ScrollLink>
             </Link>
 

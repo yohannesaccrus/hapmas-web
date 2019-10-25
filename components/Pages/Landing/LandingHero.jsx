@@ -1,6 +1,8 @@
 import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
 import Translate from "react-translate-component";
+// import { Spring } from "react-spring/renderprops";
+import { Spring } from "react-spring/renderprops.cjs";
 
 const LandingHero = () => (
   <div className="layout__container">
@@ -41,9 +43,23 @@ const LandingHero = () => (
           />
         </div>
       </div>
-      <div
-        className="landingHero__visual"
-      >
+
+      <div className="landingHero__visual">
+        {/* <img
+          src={require("../../../assets/img/landingHero/heroIllustration/chart1.svg")}
+          alt="heroImg"
+          className="chart"
+        />
+        <img
+          src={require("../../../assets/img/landingHero/heroIllustration/female.svg")}
+          alt="heroImg"
+          className="female"
+        />
+        <img
+          src={require("../../../assets/img/landingHero/heroIllustration/blob.svg")}
+          alt="heroImg"
+          className="blob"
+        /> */}
         <img
           src={require("../../../assets/img/landingHero/hero1.svg")}
           alt="heroImg"

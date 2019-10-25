@@ -1,5 +1,6 @@
 import { CustomButton } from "../../CustomComponents/CustomComponents";
 import Translate from "react-translate-component";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const LandingWorks = () => (
   <div className="layout__container">
@@ -11,7 +12,13 @@ const LandingWorks = () => (
           alt="blob"
           className="landingWorks__contImg"
         />
-        <div className="landingWorks__card">
+
+        <ScrollAnimation
+          animateIn="fadeInRight"
+          duration={1}
+          delay={200}
+          className="landingWorks__card"
+        >
           <img
             src={require("../../../assets/img/landingWorks/work_target.svg")}
             alt="illust"
@@ -29,15 +36,21 @@ const LandingWorks = () => (
               content="landingWork.card1Desc"
             />
           </div>
-        </div>
-        <div className="landingWorks__card">
+        </ScrollAnimation>
+
+        <ScrollAnimation
+          animateIn="fadeInRight"
+          duration={1}
+          delay={300}
+          className="landingWorks__card"
+        >
           <img
             src={require("../../../assets/img/landingWorks/work_diploma.svg")}
             alt="illust"
             className="cardImg"
           />
           <div className="text">
-          <Translate
+            <Translate
               component="div"
               className="title"
               content="landingWork.card2Title"
@@ -48,15 +61,21 @@ const LandingWorks = () => (
               content="landingWork.card2Desc"
             />
           </div>
-        </div>
-        <div className="landingWorks__card">
+        </ScrollAnimation>
+
+        <ScrollAnimation
+          animateIn="fadeInRight"
+          duration={1}
+          delay={400}
+          className="landingWorks__card"
+        >
           <img
             src={require("../../../assets/img/landingWorks/work_chart.svg")}
             alt="illust"
             className="cardImg"
           />
           <div className="text">
-          <Translate
+            <Translate
               component="div"
               className="title"
               content="landingWork.card3Title"
@@ -67,7 +86,7 @@ const LandingWorks = () => (
               content="landingWork.card3Desc"
             />
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </div>
   </div>

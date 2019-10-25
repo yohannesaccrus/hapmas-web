@@ -3,12 +3,16 @@
   flex-wrap: wrap;
   margin-bottom: 3rem;
   &__text {
+    // background-color: teal;
     flex-basis: 60%;
     @include respond-to("desktop") {
       margin-top: 1.5rem;
     }
     @include respond-to("huge") {
       margin-top: 0;
+    }
+    @include respond-to("ultra") {
+      flex-basis: 50%;
     }
     .main {
       font-size: 2.2rem;
@@ -65,12 +69,33 @@
   &__visual {
     flex-basis: 40%;
     position: relative;
+    @include respond-to("ultra") {
+      flex-basis: 50%;
+    }
+    // .chart {
+    //   width: 5rem;
+    //   height: 5rem;
+    //   object-fit: contain;
+    //   position: absolute;
+    // }
+    // .female {
+    //   width: 6rem;
+    //   position: absolute;
+    //   left: 4.5rem;
+    //   z-index: 2;
+    // }
+    // .blob {
+    //   width: 18rem;
+    //   position: absolute;
+    //   bottom: -5rem;
+    //   right: -8rem;
+    // }
     img {
       position: absolute;
       width: 23rem;
       height: 23rem;
       object-fit: contain;
-      left: 1.5rem;
+      left: 1.3rem;
       top: -2rem;
       @include respond-to("landscape") {
         transform: scale(1.3);

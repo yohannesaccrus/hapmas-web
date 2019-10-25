@@ -1,4 +1,5 @@
 import Translate from "react-translate-component";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const LandingDiscover = () => (
   <div className="layout__container">
@@ -8,14 +9,23 @@ const LandingDiscover = () => (
         className="head"
         content="landingDiscover.head"
       />
+
       <div className="landingDiscover__cont">
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src={require("../../../assets/img/landingDiscover/discover_pict1.svg")} alt="discover" />
+            <img
+              src={require("../../../assets/img/landingDiscover/discover_pict1.svg")}
+              alt="discover"
+            />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src={require("../../../assets/img/landingDiscover/discover_ellips1.svg")} alt="circle" />
+              <ScrollAnimation animateIn="fadeIn" duration={1} delay={200}>
+                <img
+                  src={require("../../../assets/img/landingDiscover/discover_ellips1.svg")}
+                  alt="circle"
+                />
+              </ScrollAnimation>
               <Translate
                 component="p"
                 className="title"
@@ -31,11 +41,19 @@ const LandingDiscover = () => (
         </div>
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src={require("../../../assets/img/landingDiscover/discover_pict2.svg")} alt="discover" />
+            <img
+              src={require("../../../assets/img/landingDiscover/discover_pict2.svg")}
+              alt="discover"
+            />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src={require("../../../assets/img/landingDiscover/discover_ellips2.svg")} alt="circle" />
+              <ScrollAnimation animateIn="fadeIn" duration={1} delay={250}>
+                <img
+                  src={require("../../../assets/img/landingDiscover/discover_ellips2.svg")}
+                  alt="circle"
+                />
+              </ScrollAnimation>
               <Translate
                 component="p"
                 className="title"
@@ -51,11 +69,19 @@ const LandingDiscover = () => (
         </div>
         <div className="landingDiscover__card">
           <div className="landingDiscover__visual">
-            <img src={require("../../../assets/img/landingDiscover/discover_pict3.svg")} alt="discover" />
+            <img
+              src={require("../../../assets/img/landingDiscover/discover_pict3.svg")}
+              alt="discover"
+            />
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <img src={require("../../../assets/img/landingDiscover/discover_ellips3.svg")} alt="circle" />
+              <ScrollAnimation animateIn="fadeIn" duration={1} delay={300}>
+                <img
+                  src={require("../../../assets/img/landingDiscover/discover_ellips3.svg")}
+                  alt="circle"
+                />
+              </ScrollAnimation>
               <Translate
                 component="p"
                 className="title"

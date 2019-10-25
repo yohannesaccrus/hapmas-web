@@ -17,6 +17,7 @@ const Layout = ({ children, title }) => (
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       ></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
     </Head>
     <NavBar />
     <div>{children}</div>

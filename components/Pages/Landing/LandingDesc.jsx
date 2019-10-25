@@ -1,6 +1,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
 import Translate from "react-translate-component";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const LandingDesc = () => (
   <div className="layout__container layout__container--grey">
@@ -26,7 +27,8 @@ const LandingDesc = () => (
           </div>
         </div>
         <div className="landingDesc__cardCont">
-          <div className="landingDesc__card">
+
+        <ScrollAnimation animateIn="fadeInUp" duration={1} delay={200} className="landingDesc__card">
             <img
               src={require("../../../assets/img/landingDesc/solution_ticket.svg")}
               alt="cardIcon"
@@ -48,9 +50,9 @@ const LandingDesc = () => (
               className="link link--blue"
               content="landingDesc.card1Link"
             />
-          </div>
+          </ScrollAnimation>
 
-          <div className="landingDesc__card">
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={300} className="landingDesc__card">
             <img
               src={require("../../../assets/img/landingDesc/solution_search.svg")}
               alt="cardIcon"
@@ -72,9 +74,9 @@ const LandingDesc = () => (
               className="link link--blue"
               content="landingDesc.card2Link"
             />
-          </div>
+          </ScrollAnimation>
 
-          <div className="landingDesc__card">
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={400} className="landingDesc__card">
             <img
               src={require("../../../assets/img/landingDesc/solution_crane.svg")}
               alt="cardIcon"
@@ -96,9 +98,9 @@ const LandingDesc = () => (
               className="link link--blue"
               content="landingDesc.card3Link"
             />
-          </div>
+            </ScrollAnimation>
 
-          <div className="landingDesc__card">
+            <ScrollAnimation animateIn="fadeInUp" duration={1} delay={500} className="landingDesc__card">
             <img
               src={require("../../../assets/img/landingDesc/solution_analytic.svg")}
               alt="cardIcon"
@@ -120,9 +122,9 @@ const LandingDesc = () => (
               className="link link--blue"
               content="landingDesc.card4Link"
             />
-          </div>
+          </ScrollAnimation>
 
-          <div className="landingDesc__card">
+          <ScrollAnimation animateIn="fadeInUp" duration={1} delay={600} className="landingDesc__card">
             <img
               src={require("../../../assets/img/landingDesc/solution_marketing.svg")}
               alt="cardIcon"
@@ -144,7 +146,7 @@ const LandingDesc = () => (
               className="link link--blue"
               content="landingDesc.card5Link"
             />
-          </div>
+         </ScrollAnimation>
 
           <div className="landingDesc__card landingDesc__card--btn">
             <img
