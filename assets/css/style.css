@@ -1128,6 +1128,24 @@ p {
         display: table;
         margin: 0 auto;
         margin-top: 0.8rem; } }
+  .landingDesc__arrow {
+    position: absolute;
+    width: 4rem;
+    bottom: -3rem;
+    right: 3rem; }
+    @media (min-width: 768px) {
+      .landingDesc__arrow {
+        width: 5rem;
+        bottom: -5rem;
+        right: 2rem; } }
+    @media (min-width: 1200px) {
+      .landingDesc__arrow {
+        width: 4rem;
+        bottom: -4rem; } }
+    @media (min-width: 1920px) {
+      .landingDesc__arrow {
+        width: 5rem;
+        bottom: -5rem; } }
 
 @media (min-width: 768px) {
   .landingWorks {

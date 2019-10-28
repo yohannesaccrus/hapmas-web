@@ -255,4 +255,23 @@
       margin-top: 0.8rem;
     }
   }
+  &__arrow {
+    position: absolute;
+    width: 4rem;
+    bottom: -3rem;
+    right: 3rem;
+    @include respond-to("medium") {
+      width: 5rem;
+      bottom: -5rem;
+      right: 2rem;
+    }
+    @include respond-to("desktop") {
+      width: 4rem;
+      bottom: -4rem;
+    }
+    @include respond-to("huge") {
+      width: 5rem;
+      bottom: -5rem;
+    }
+  }
 }

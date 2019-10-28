@@ -6,6 +6,7 @@ import {
 } from "../../CustomComponents/CustomComponents";
 import Translate from "react-translate-component";
 import axios from "axios";
+import ScrollAnimation from "react-animate-on-scroll";
 import api from "../../../configs/api";
 
 class LandingContact extends Component {
@@ -80,47 +81,58 @@ class LandingContact extends Component {
             content="landingContact.info"
           />
           <Form className="landingContact__form" onSubmit={this.submitHandler}>
-            <div className="landingContact__inputs">
-            <CustomInput
-              inputType="text"
-              placeholder="Name"
-              inputId="name"
-              required={true}
-              className="landingContact__input"
-              onChange={this.changeHandler}
-              value={name}
-            />
-            <CustomInput
-              inputType="email"
-              placeholder="Email"
-              inputId="email"
-              required={true}
-              className="landingContact__input"
-              onChange={this.changeHandler}
-              value={email}
-            />
-            <CustomInput
-              inputType="text"
-              placeholder="Company"
-              inputId="company"
-              required={true}
-              className="landingContact__input"
-              onChange={this.changeHandler}
-              value={company}
-            />
-            </div>
-            <div className="landingContact__textarea">
-            <CustomInput
-              inputType="textarea"
-              placeholder="Write a Message"
-              inputId="message"
-              required={true}
-              className="landingContact__input"
-              rows={5}
-              onChange={this.changeHandler}
-              value={message}
-            />
-            </div>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={1}
+              delay={200}
+              className="landingContact__inputs"
+            >
+              <CustomInput
+                inputType="text"
+                placeholder="Name"
+                inputId="name"
+                required={true}
+                className="landingContact__input"
+                onChange={this.changeHandler}
+                value={name}
+              />
+              <CustomInput
+                inputType="email"
+                placeholder="Email"
+                inputId="email"
+                required={true}
+                className="landingContact__input"
+                onChange={this.changeHandler}
+                value={email}
+              />
+              <CustomInput
+                inputType="text"
+                placeholder="Company"
+                inputId="company"
+                required={true}
+                className="landingContact__input"
+                onChange={this.changeHandler}
+                value={company}
+              />
+            </ScrollAnimation>
+
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={1}
+              delay={300}
+              className="landingContact__textarea"
+            >
+              <CustomInput
+                inputType="textarea"
+                placeholder="Write a Message"
+                inputId="message"
+                required={true}
+                className="landingContact__input"
+                rows={5}
+                onChange={this.changeHandler}
+                value={message}
+              />
+              </ScrollAnimation>
             <CustomButton
               btnText={<Translate content="landingContact.contactBtn" />}
               // btnText="Kirim"

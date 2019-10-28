@@ -2,7 +2,6 @@ import { Link as ScrollLink } from "react-scroll";
 import { CustomButton } from "../../CustomComponents/CustomComponents";
 import Translate from "react-translate-component";
 // import { Spring } from "react-spring/renderprops";
-import { Spring } from "react-spring/renderprops.cjs";
 
 const LandingHero = () => (
   <div className="layout__container">

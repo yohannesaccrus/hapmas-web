@@ -148,7 +148,7 @@ const LandingDesc = () => (
             />
          </ScrollAnimation>
 
-          <div className="landingDesc__card landingDesc__card--btn">
+         <ScrollAnimation animateIn="fadeInRight" duration={1} delay={1000} className="landingDesc__card landingDesc__card--btn">
             <img
               src={require("../../../assets/img/landingDesc/desc_btn.svg")}
               alt="haha"
@@ -174,7 +174,9 @@ const LandingDesc = () => (
               alt="dots"
               className="landingDesc__btnDots"
             />
-          </div>
+            <img src={require('../../../assets/img/landingDesc/arrow.svg')} alt="arrow" className="landingDesc__arrow"/>
+          </ScrollAnimation>
+
         </div>
       </div>
     </div>

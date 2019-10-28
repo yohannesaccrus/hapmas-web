@@ -20,7 +20,7 @@ const LandingDiscover = () => (
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <ScrollAnimation animateIn="fadeIn" duration={1} delay={200}>
+              <ScrollAnimation animateIn="fadeInRight" duration={1} delay={200}>
                 <img
                   src={require("../../../assets/img/landingDiscover/discover_ellips1.svg")}
                   alt="circle"
@@ -48,7 +48,7 @@ const LandingDiscover = () => (
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <ScrollAnimation animateIn="fadeIn" duration={1} delay={250}>
+              <ScrollAnimation animateIn="fadeInLeft" duration={1} delay={250}>
                 <img
                   src={require("../../../assets/img/landingDiscover/discover_ellips2.svg")}
                   alt="circle"
@@ -76,7 +76,7 @@ const LandingDiscover = () => (
           </div>
           <div className="landingDiscover__text">
             <div className="main">
-              <ScrollAnimation animateIn="fadeIn" duration={1} delay={300}>
+              <ScrollAnimation animateIn="fadeInRight" duration={1} delay={300}>
                 <img
                   src={require("../../../assets/img/landingDiscover/discover_ellips3.svg")}
                   alt="circle"
